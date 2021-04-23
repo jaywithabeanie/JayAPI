@@ -12,7 +12,8 @@ Type | Description
 ------------ | -------------
 **Method Type** | `ItemStack` Method
 **Method Info** | Creates an `ItemStack` to be used inside of an `Inventory`
-**Parameter Info** | • material: Material of the ItemStack\n• amount: Amount of the Item within the ItemStack
+**Parameter Info** | • material: Material of the ItemStack
+| • amount: Amount of the Item within the ItemStack
 
 --------------
 
