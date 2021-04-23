@@ -5,4 +5,12 @@
 * [Inventory Manager](#inventory-manager)
 
 --------------
+## Item Manager
+
+# createInventoryItem
+
+--------------
+
 ## Inventory Manager
+
+# createInventory
