@@ -7,7 +7,7 @@
 --------------
 ## Item Manager
 
-* ### createInventoryItem
+* ### __createInventoryItem__
 
 --------------
 
