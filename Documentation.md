@@ -7,10 +7,10 @@
 --------------
 ## Item Manager
 
-# createInventoryItem
+* ### createInventoryItem
 
 --------------
 
 ## Inventory Manager
 
-# createInventory
+* ### createInventory
