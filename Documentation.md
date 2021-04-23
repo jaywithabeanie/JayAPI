@@ -25,6 +25,6 @@ Type | Description
 ------------ | -------------
 **Method Type** | `Inventory` method
 **Method Info** | Creates an `Inventory`
-**Parameter Info**<br>‎<br>‎ | • `rowCount`: Amount of rows in the `Inventory`<br>• `title`: `Title` of the `Inventory`<br>• `inventorySlot_itemData`: `HashMap` containing all the data regarding the `Item` for the corresponding `Inventory` slot (as `Strings`)
+**Parameter Info**<br>‎<br>‎ | • `rowCount`: Amount of rows in the `Inventory`<br>• `title`: `Title` of the `Inventory`<br>• `inventorySlot_itemData`: `HashMap` containing all the [data](#createinventoryitemmaterial-amount-type-displayname-lore) regarding the `Item` for the corresponding `Inventory` slot (as `Strings`)
 
 --------------
