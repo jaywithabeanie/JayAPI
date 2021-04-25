@@ -1,8 +1,9 @@
 # JayAPI - Documentation
 
 ## Content Table
-* [Item Manager](#item_manager)
+* [Config Manager](#config_manager)
 * [Inventory Manager](#inventory_manager)
+* [Item Manager](#item_manager)
 
 --------------
 
