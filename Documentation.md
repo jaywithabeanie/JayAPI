@@ -14,7 +14,7 @@ Type | Description
 ------------ | -------------
 **Method Type** | `Void` method
 **Method Info** | Creates a config `File`
-**Parameter Info**<br>‎ | • `directoryPath (String)`: Path the config `File` will be created in (use `.` to separate directories - eg. ".ExamplePlugin.ExampleFolder."<br>• `fileName (String)`: Name the config `File` will be given
+**Parameter Info**<br>‎ | • `directoryPath` (String): Path the config `File` will be created in (use `.` to separate directories - eg. ".ExamplePlugin.ExampleFolder."<br>• `fileName (String)`: Name the config `File` will be given
 
 * ### `getConfig(folderPath, fileName)` 
 
@@ -28,7 +28,7 @@ Type | Description
 ------------ | -------------
 **Method Type** | `Inventory` method
 **Method Info** | Creates an `Inventory`
-**Parameter Info**<br>‎ | • `rowCount (Integer)`: Amount of rows in the `Inventory`<br>• `title (String)`: `Title` of the `Inventory`<br>• `inventorySlot_itemData (HashMap)`: `HashMap` containing all the [data](#createinventoryitemmaterial-amount-type-displayname-lore) regarding the `Item` for the corresponding `Inventory` slot (as `Strings`)
+**Parameter Info**<br>‎<br>‎ | • `rowCount (Integer)`: Amount of rows in the `Inventory`<br>• `title (String)`: `Title` of the `Inventory`<br>• `inventorySlot_itemData (HashMap)`: `HashMap` containing all the [data](#createinventoryitemmaterial-amount-type-displayname-lore) regarding the `Item` for the corresponding `Inventory` slot (as `Strings`)
 
 --------------
 
