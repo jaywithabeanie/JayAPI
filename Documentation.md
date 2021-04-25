@@ -12,7 +12,7 @@
 
 Type | Description
 ------------ | -------------
-**Method Type** | `Void` method
+**Method Type** | `Void` method<br>‎
 **Method Info** | Creates a config `File`
 **Parameter Info**<br>‎ | • `directoryPath (String)`: Path the config `File` will be created in (use `.` to separate directories - eg. `".ExamplePlugin.ExampleFolder."`)<br>• `fileName (String)`: Name the config `File` will be given
 
@@ -30,7 +30,7 @@ Type | Description
 ------------ | -------------
 **Method Type** | `Void` method
 **Method Info** | Creates a config `File`
-**Parameter Info**<br>‎ | • `directoryPath`: Path the config `File` will be saved in (use `.` to separate directories - eg. `".ExamplePlugin.ExampleFolder."`)<br>• `fileName (String)`: Name the config `File` will be saved as<br>• `yamlConfiguration`: `YamlConfiguration File` to save
+**Parameter Info**<br>‎<br>‎ | • `directoryPath`: Path the config `File` will be saved in (use `.` to separate directories - eg. `".ExamplePlugin.ExampleFolder."`)<br>• `fileName (String)`: Name the config `File` will be saved as<br>• `yamlConfiguration`: `YamlConfiguration File` to save
 
 --------------
 
@@ -40,8 +40,8 @@ Type | Description
 
 Type | Description
 ------------ | -------------
-**Method Type** | `Inventory` method
-**Method Info** | Creates an `Inventory`
+**Method Type** | `Inventory` method<br>‎
+**Method Info** | Creates an `Inventory`<br>‎
 **Parameter Info**<br>‎<br>‎ | • `rowCount (Integer)`: Amount of rows in the `Inventory`<br>• `title (String)`: `Title` of the `Inventory`<br>• `inventorySlot_itemData (HashMap)`: `HashMap` containing all the [data](#createinventoryitemmaterial-amount-type-displayname-lore) regarding the `Item` for the corresponding `Inventory` slot (as `Strings`)
 
 --------------
