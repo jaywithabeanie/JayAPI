@@ -14,9 +14,23 @@ Type | Description
 ------------ | -------------
 **Method Type** | `Void` method
 **Method Info** | Creates a config `File`
-**Parameter Info**<br>‎ | • `directoryPath` (String): Path the config `File` will be created in (use `.` to separate directories - eg. ".ExamplePlugin.ExampleFolder."<br>• `fileName (String)`: Name the config `File` will be given
+**Parameter Info**<br>‎ | • `directoryPath (String)`: Path the config `File` will be created in (use `.` to separate directories - eg. `".ExamplePlugin.ExampleFolder."`)<br>• `fileName (String)`: Name the config `File` will be given
 
 * ### `getConfig(folderPath, fileName)` 
+
+Type | Description
+------------ | -------------
+**Method Type** | `FileConfiguration` method
+**Method Info** | Returns a config `File` located in a given path
+**Parameter Info**<br>‎ | • `directoryPath (String)`: Path the config `File` is located in (use `.` to separate directories - eg. `".ExamplePlugin.ExampleFolder."`)<br>• `fileName (String)`: Name of the config `File`
+
+* ### `saveConfig(folderPath, fileName, configFile)` 
+
+Type | Description
+------------ | -------------
+**Method Type** | `Void` method
+**Method Info** | Creates a config `File`
+**Parameter Info**<br>‎ | • `directoryPath`: Path the config `File` will be saved in (use `.` to separate directories - eg. `".ExamplePlugin.ExampleFolder."`)<br>• `fileName (String)`: Name the config `File` will be saved as<br>• `yamlConfiguration`: `YamlConfiguration File` to save
 
 --------------
 
