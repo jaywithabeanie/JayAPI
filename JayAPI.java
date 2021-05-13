@@ -3,7 +3,6 @@ package me.jaypeg.jayapi;
 import me.jaypeg.jayapi.Managers.Config.Config_Manager;
 import me.jaypeg.jayapi.Managers.Inventory.Inventory_Manager;
 import me.jaypeg.jayapi.Managers.ItemStack.ItemStack_Manager;
-import me.jaypeg.jayapi.Managers.ItemStack.Utils.OLD_initiateItemStacks;
 import me.jaypeg.jayapi.Managers.Message.Message_Manager;
 import me.jaypeg.jayapi.Managers.Message.Utils.initiateMessages;
 import me.jaypeg.jayapi.Managers.Scoreboard.Scoreboard_Manager;
@@ -25,8 +24,7 @@ public final class JayAPI extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
-        OLD_initiateItemStacks.initiateItemStacks();
+        
         initiateMessages.initiateMessages();
 
         config_manager = new Config_Manager();
