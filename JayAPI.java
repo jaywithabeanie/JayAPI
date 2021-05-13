@@ -24,8 +24,6 @@ public final class JayAPI extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        
-        initiateMessages.initiateMessages();
 
         config_manager = new Config_Manager();
         inventory_manager = new Inventory_Manager();
