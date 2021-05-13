@@ -20,7 +20,7 @@ public class Config_Manager {
     /**                 • fileName: Name the config File will be given                                                                                 */
     /** ---------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                                */
-    public void createConfig(String folderPath, String fileName) {
+    public void createConfig(String directoryPath, String fileName) {
         createConfig.createConfig(folderPath, fileName);
     }
     /**                                                                                                                                                */
@@ -34,7 +34,7 @@ public class Config_Manager {
     /**                 • fileName: Name of the config File                                                                                       */
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                           */
-    public FileConfiguration getConfig(String folderPath, String fileName) {
+    public FileConfiguration getConfig(String directoryPath, String fileName) {
         return getConfig.getConfig(folderPath, fileName);
     }
     /**                                                                                                                                           */
