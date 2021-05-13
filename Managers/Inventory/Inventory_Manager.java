@@ -15,24 +15,19 @@ import java.util.HashMap;
 public class Inventory_Manager {
 
 
-    /** --------------------------------------------------------------------------------------------------------------------------------------------------- */
-    /** @UtilType       Inventory Util                                                                                                                      */
-    /** @UtilInfo       Creates an Inventory from given data                                                                                                */
-    /** @ParameterInfo  • rowCount: Amount of rows in the Inventory                                                                                         */
-    /**                 • title: Title of the Inventory                                                                                                     */
-    /**                 • inventorySlot_itemData: HashMap containing all the data regarding the ItemStack for the corresponding Inventory slot (as Strings) */
-    /**                         - material: Material of the ItemStack                                                                                       */
-    /**                         - amount: Amount of the Item within the ItemStack                                                                           */
-    /**                         - type: Data type of the ItemStack (used for colored wool, durability on tools, etc.)                                       */
-    /**                         - displayName: Custom name displayed for the ItemStack                                                                      */
-    /**                         - lore: Lore of the ItemStack (use \n to add more lines)                                                                    */
-    /** --------------------------------------------------------------------------------------------------------------------------------------------------- */
-    /**                                                                                                                                                     */
+    /** ---------------------------------------------------------------------------------------------------------------------- */
+    /** @UtilType       Inventory Util                                                                                         */
+    /** @UtilInfo       Creates an Inventory from given data                                                                   */
+    /** @ParameterInfo  • rowCount: Amount of rows in the Inventory                                                            */
+    /**                 • title: Title of the Inventory                                                                        */
+    /**                 • inventorySlot_itemStack: HashMap containing all ItemStacks and their corresponding Inventory slot    */
+    /** ---------------------------------------------------------------------------------------------------------------------- */
+    /**                                                                                                                        */
     public static Inventory createInventory(int rowCount, String title, HashMap<Integer, ItemStack> inventorySlot_itemStack) {
         return createInventory.createInventory(rowCount, title, inventorySlot_itemStack);
     }
-    /**                                                                                                                                                     */
-    /** --------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /**                                                                                                                        */
+    /** ---------------------------------------------------------------------------------------------------------------------- */
 
 
 }
