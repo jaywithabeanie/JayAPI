@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 
 /** @ClassType Util Class */
-/** @ClassInfo Creates an Inventory from given data */
+/** @ClassInfo Creates an Inventory with given data */
 
 public class createInventory {
 
