@@ -25,3 +25,9 @@ Name | Type | Description
 `Inventory_Manager` | Manager | Manages Inventories
 `createInventory` | Util | Creates an Inventory with given data
    
+<!-- ItemStack -->
+## ItemStack
+Name | Type | Description
+---- | ---- | -----------
+`ItemStack_Manager` | Manager | Manages ItemStacks
+`createItemStack` | Util | Creates an ItemStack with given data
