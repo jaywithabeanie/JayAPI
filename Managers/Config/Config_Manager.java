@@ -8,7 +8,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 
 /** @ClassType Manager Class */
-/** @ClassInfo Manages custom config files */
+/** @ClassInfo Manages config files */
 
 public class Config_Manager {
 
@@ -21,21 +21,21 @@ public class Config_Manager {
     /** ---------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                                */
     public void createConfig(String directoryPath, String fileName) {
-        createConfig.createConfig(folderPath, fileName);
+        createConfig.createConfig(directoryPath, fileName);
     }
     /**                                                                                                                                                */
     /** ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
-    /** @UtilType       FileConfiguration Util                                                                                                    */
+    /** @UtilType       YamlConfiguration Util                                                                                                    */
     /** @UtilInfo       Returns a config File located in a given path                                                                             */
     /** @ParameterInfo  • directoryPath: Path the config File is located in (use . to separate directories - eg. ".ExamplePlugin.ExampleFolder.") */
     /**                 • fileName: Name of the config File                                                                                       */
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                           */
-    public FileConfiguration getConfig(String directoryPath, String fileName) {
-        return getConfig.getConfig(folderPath, fileName);
+    public YamlConfiguration getConfig(String directoryPath, String fileName) {
+        return getConfig.getConfig(directoryPath, fileName);
     }
     /**                                                                                                                                           */
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
@@ -43,10 +43,10 @@ public class Config_Manager {
 
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                                                    */
-    /** @UtilInfo       Saves a config File                                                                                                          */
+    /** @UtilInfo       Saves a config File in a given path                                                                                          */
     /** @ParameterInfo  • directoryPath: Path the config File will be saved in (use . to separate directories - eg. ".ExamplePlugin.ExampleFolder.") */
     /**                 • fileName: Name the config File will be saved as                                                                            */
-    /**                 • yamlConfiguration: YamlConfiguration File to save                                                                          */
+    /**                 • configFile: YamlConfiguration File to save                                                                                 */
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                              */
     public void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
