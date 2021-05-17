@@ -14,13 +14,13 @@ public class getConfig {
 
 
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
-    /** @UtilType       FileConfiguration Util                                                                                                    */
+    /** @UtilType       YamlConfiguration Util                                                                                                    */
     /** @UtilInfo       Returns a config File located in a given path                                                                             */
     /** @ParameterInfo  • directoryPath: Path the config File is located in (use . to separate directories - eg. ".ExamplePlugin.ExampleFolder.") */
     /**                 • fileName: Name of the config File                                                                                       */
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                           */
-    public static FileConfiguration getConfig(String directoryPath, String fileName) {
+    public static YamlConfiguration getConfig(String directoryPath, String fileName) {
 
         // Determine Plugin Name & Directory Path
         String pluginName = directoryPath.split("\\.")[1];
