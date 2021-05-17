@@ -22,16 +22,20 @@ public class saveConfig {
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                              */
     public static void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
-
+        
+        // Determine Plugin Name & Directory Path
         String pluginName = directoryPath.split("\\.")[1];
         directoryPath = directoryPath.replaceFirst("\\." + pluginName, "").replace(".", File.separator) + File.separator;
 
-        File file = new File(Bukkit.getServer().getPluginManager().getPlugin(pluginName).getDataFolder() + directoryPath, fileName + ".yml");
+        // Save Config File
+        {
+            File file = new File(Bukkit.getServer().getPluginManager().getPlugin(pluginName).getDataFolder() + directoryPath, fileName + ".yml");
 
-        try {
-            configFile.save(file);
-        } catch (IOException e) {
-            e.printStackTrace();
+            try {
+                configFile.save(file);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
     }
