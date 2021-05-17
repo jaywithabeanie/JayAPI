@@ -3,7 +3,6 @@ package me.jaypeg.jayapi.Managers.Config;
 import me.jaypeg.jayapi.Managers.Config.Utils.createConfig;
 import me.jaypeg.jayapi.Managers.Config.Utils.getConfig;
 import me.jaypeg.jayapi.Managers.Config.Utils.saveConfig;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 
