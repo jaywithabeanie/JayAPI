@@ -5,7 +5,7 @@ Spigot API for Minecraft 1.8
 * [Config](#config-manager)
 
 
-### Config Manager
+## Config Manager
 Name | Type | Description
 ------------ | ------------ | ------------
 `Config_Manager` | Manager | Manages custom config Files
