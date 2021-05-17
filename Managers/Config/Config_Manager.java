@@ -8,7 +8,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 
 /** @ClassType Manager Class */
-/** @ClassInfo Manages config files */
+/** @ClassInfo Manages config Files */
 
 public class Config_Manager {
 
