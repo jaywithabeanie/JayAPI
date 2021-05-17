@@ -10,3 +10,5 @@ Name | Type | Description
 ------------ | ------------ | ------------
 `Config_Manager` | Manager | Manages custom config Files
 `createConfig` | Util | Creates a config File
+`getConfig` | Util | Returns a config File located in a given path
+`saveConfig` | Util | Saves a config File
