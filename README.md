@@ -7,6 +7,7 @@ Spigot API for Minecraft 1.8
 ## Managers
 * [Config](#config)
 * [Inventory](#inventory)
+* [ItemStack](#itemstack)
 
 
 <!-- Config -->
