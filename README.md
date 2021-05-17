@@ -2,7 +2,7 @@
 Spigot API for Minecraft 1.8
 
 ## Managers
-* [Config](#config_manager)
+* [Config](#config-manager)
 
 
 ### Config Manager
