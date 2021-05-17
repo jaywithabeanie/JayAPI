@@ -8,7 +8,7 @@ import java.io.IOException;
 
 
 /** @ClassType Util Class */
-/** @ClassInfo Saves a config File */
+/** @ClassInfo Saves a config File in a given path */
 
 public class saveConfig {
 
@@ -18,7 +18,7 @@ public class saveConfig {
     /** @UtilInfo       Saves a config File                                                                                                          */
     /** @ParameterInfo  • directoryPath: Path the config File will be saved in (use . to separate directories - eg. ".ExamplePlugin.ExampleFolder.") */
     /**                 • fileName: Name the config File will be saved as                                                                            */
-    /**                 • yamlConfiguration: YamlConfiguration File to save                                                                          */
+    /**                 • configFile: YamlConfiguration File to save                                                                                 */
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                              */
     public static void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
@@ -38,5 +38,5 @@ public class saveConfig {
     /**                                                                                                                                              */
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
 
-  
+
 }
