@@ -13,13 +13,13 @@ import java.util.ArrayList;
 public class addItemFlags {
 
 
-    /** -------------------------------------------------------------------------------------------------------------------------- */
-    /** @UtilType       ItemStack Util                                                                                             */
-    /** @UtilInfo       Adds given ItemFlags to an ItemStack                                                                       */
-    /** @ParameterInfo  • itemStack: ItemStack to add ItemFlags to                                                                 */
-    /**                 • itemFlags: ArrayList of all ItemFlags to be added                                                        */
-    /** -------------------------------------------------------------------------------------------------------------------------- */
-    /**                                                                                                                            */
+    /** ------------------------------------------------------------------------------------------ */
+    /** @UtilType       ItemStack Util                                                             */
+    /** @UtilInfo       Adds given ItemFlags to an ItemStack                                       */
+    /** @ParameterInfo  • itemStack: ItemStack to add ItemFlags to                                 */
+    /**                 • itemFlags: ArrayList of all ItemFlags to be added                        */
+    /** ------------------------------------------------------------------------------------------ */
+    /**                                                                                            */
     public static ItemStack addItemFlags(ItemStack itemStack, ArrayList<ItemFlag> itemFlags) {
 
         // Create ItemStack
@@ -38,8 +38,8 @@ public class addItemFlags {
         return itemStack_;
 
     }
-    /**                                                                                                                            */
-    /** -------------------------------------------------------------------------------------------------------------------------- */
+    /**                                                                                            */
+    /** ------------------------------------------------------------------------------------------ */
 
 
 }
