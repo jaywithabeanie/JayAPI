@@ -15,10 +15,9 @@ public class addItemFlags {
 
     /** -------------------------------------------------------------------------------------------------------------------------- */
     /** @UtilType       ItemStack Util                                                                                             */
-    /** @UtilInfo       Adds given Enchantments to an ItemStack                                                                    */
-    /** @ParameterInfo  • itemStack: ItemStack to add Enchantments to                                                              */
+    /** @UtilInfo       Adds given ItemFlags to an ItemStack                                                                       */
+    /** @ParameterInfo  • itemStack: ItemStack to add ItemFlags to                                                                 */
     /**                 • itemFlags: ArrayList of all ItemFlags to be added                                                        */
-    /**                 • hidden: Whether or not the Enchantments are hidden in the item's lore                                    */
     /** -------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                            */
     public static ItemStack addItemFlags(ItemStack itemStack, ArrayList<ItemFlag> itemFlags) {
