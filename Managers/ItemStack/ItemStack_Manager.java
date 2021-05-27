@@ -1,9 +1,6 @@
 package me.jaypeg.jayapi.Managers.ItemStack;
 
-import me.jaypeg.jayapi.Managers.ItemStack.Utils.addEnchantments;
-import me.jaypeg.jayapi.Managers.ItemStack.Utils.addItemFlags;
-import me.jaypeg.jayapi.Managers.ItemStack.Utils.createItemStack;
-import me.jaypeg.jayapi.Managers.ItemStack.Utils.createPotionItemStack;
+import me.jaypeg.jayapi.Managers.ItemStack.Utils.*;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
@@ -48,6 +45,22 @@ public class ItemStack_Manager {
     }
     /**                                                                                            */
     /** ------------------------------------------------------------------------------------------ */
+
+
+    /** --------------------------------------------------------------------------------------------------------------------- */
+    /** @UtilType       ItemStack Util                                                                                        */
+    /** @UtilInfo       Creates an ItemStack for a Book with given data                                                       */
+    /** @ParameterInfo  • amount: Amount of Books in the ItemStack                                                            */
+    /**                 • displayName: Custom name displayed for the ItemStack                                                */
+    /**                 • author: Name of the author of the Book                                                              */
+    /**                 • pages: ArrayList of every page of the Book                                                          */
+    /** --------------------------------------------------------------------------------------------------------------------- */
+    /**                                                                                                                       */
+    public static ItemStack createBookItemStack(int amount, String displayName, String author, ArrayList<String> pages) {
+        return createBookItemStack.createBookItemStack(amount, displayName, author, pages);
+    }
+    /**                                                                                                                       */
+    /** --------------------------------------------------------------------------------------------------------------------- */
 
 
     /** ------------------------------------------------------------------------------------------------------------------------------ */
