@@ -83,4 +83,20 @@ public class World_Manager {
         TeleportWorld.TeleportWorld(worldName, player);
     }
 
+    public static void worldTickSpeed(World world, String ticks) {
+        SettingTickSpeed.SettingTickSpeed(world, ticks);
+    }
+
+    public static void worldTickSpeed(String worldName, String ticks) {
+        SettingTickSpeed.SettingTickSpeed(worldName, ticks);
+    }
+
+    public static void worldGameRule(World world, String GameRule, String value) {
+        SettingGameRule.SettingGameRule(world, GameRule, value);
+    }
+
+    public static void worldGameRule(String worldName, String GameRule, String value) {
+        SettingGameRule.SettingGameRule(worldName, GameRule, value);
+    }
+
 }
