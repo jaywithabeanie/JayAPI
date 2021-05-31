@@ -31,4 +31,10 @@ Name | Type | Description
 Name | Type | Description
 ---- | ---- | -----------
 `ItemStack_Manager` | Manager | Manages ItemStacks
+`addEnchantments` | Util | Adds given Enchantments to an ItemStack
+`addItemFlags` | Util | Adds given ItemFlags to an ItemStack
+`createBookItemStack` | Util | Creates an ItemStack for a Book with given data
 `createItemStack` | Util | Creates an ItemStack with given data
+`createLeatherArmorItemStack` | Util | Creates an ItemStack for Leather Armor with given data
+`createPotionItemStack` | Util | Creates an ItemStack for a Potion with given data
+`createSkullItemStack` | Util | Creates an ItemStack for a Skull with given data
