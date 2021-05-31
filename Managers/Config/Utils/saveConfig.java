@@ -22,7 +22,7 @@ public class saveConfig {
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                              */
     public static void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
-        
+
         // Determine Plugin Name & Directory Path
         String pluginName = directoryPath.split("\\.")[1];
         directoryPath = directoryPath.replaceFirst("\\." + pluginName, "").replace(".", File.separator) + File.separator;
