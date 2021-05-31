@@ -13,21 +13,22 @@ import java.util.ArrayList;
 public class createBookItemStack {
 
 
-    /** --------------------------------------------------------------------------------------------------------------------- */
-    /** @UtilType       ItemStack Util                                                                                        */
-    /** @UtilInfo       Creates an ItemStack for a Book with given data                                                       */
-    /** @ParameterInfo  • amount: Amount of Books in the ItemStack                                                            */
-    /**                 • displayName: Custom name displayed for the ItemStack                                                */
-    /**                 • author: Name of the author of the Book                                                              */
-    /**                 • pages: ArrayList of every page of the Book                                                          */
-    /** --------------------------------------------------------------------------------------------------------------------- */
-    /**                                                                                                                       */
-    public static ItemStack createBookItemStack(int amount, String displayName, String author, ArrayList<String> pages) {
+    /** --------------------------------------------------------------------------------------------------------------------------------------------- */
+    /** @UtilType       ItemStack Util                                                                                                                */
+    /** @UtilInfo       Creates an ItemStack for a Book with given data                                                                               */
+    /** @ParameterInfo  • author: Name of the Author of the Book                                                                                      */
+    /**                 • pages: ArrayList of every Page of the Book                                                                                  */
+    /**                 • amount: Amount of Books in the ItemStack                                                                                    */
+    /**                 • displayName: Custom name displayed for the ItemStack                                                                        */
+    /**                 • lore: Lore of the ItemStack                                                                                                 */
+    /** --------------------------------------------------------------------------------------------------------------------------------------------- */
+    /**                                                                                                                                               */
+    public static ItemStack createBookItemStack(String author, ArrayList<String> pages, int amount, String displayName) {
 
         // Create ItemStack
         ItemStack itemStack = new ItemStack(Material.WRITTEN_BOOK, amount);
 
-        // Change ItemMeta
+        // Change BookMeta
         {
             BookMeta bookMeta = (BookMeta) itemStack.getItemMeta();
 
@@ -42,8 +43,30 @@ public class createBookItemStack {
         return itemStack;
 
     }
-    /**                                                                                                                       */
-    /** --------------------------------------------------------------------------------------------------------------------- */
+    /**                                                                                                                                               */
+    public static ItemStack createBookItemStack(String author, ArrayList<String> pages, int amount, String displayName, ArrayList<String> lore) {
+
+        // Create ItemStack
+        ItemStack itemStack = new ItemStack(Material.WRITTEN_BOOK, amount);
+
+        // Change BookMeta
+        {
+            BookMeta bookMeta = (BookMeta) itemStack.getItemMeta();
+
+            bookMeta.setDisplayName(displayName);
+            bookMeta.setAuthor(author);
+            bookMeta.setPages(pages);
+            bookMeta.setLore(lore);
+
+            itemStack.setItemMeta(bookMeta);
+        }
+
+        // Return ItemStack
+        return itemStack;
+
+    }
+    /**                                                                                                                                               */
+    /** --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 }

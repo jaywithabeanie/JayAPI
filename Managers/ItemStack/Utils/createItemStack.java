@@ -39,10 +39,13 @@ public class createItemStack {
         ItemStack itemStack = new ItemStack(material, amount, (short) type);
 
         // Change ItemMeta
-        ItemMeta meta = itemStack.getItemMeta();
-        assert meta != null;
-        meta.setDisplayName(displayName);
-        itemStack.setItemMeta(meta);
+        {
+            ItemMeta meta = itemStack.getItemMeta();
+
+            meta.setDisplayName(displayName);
+
+            itemStack.setItemMeta(meta);
+        }
 
         // Return ItemStack
         return itemStack;

@@ -27,11 +27,13 @@ public class addEnchantments {
         // Create ItemStack
         ItemStack itemStack_ = itemStack;
 
-        // Add & Hide Enchantments
+        // Add Enchantments
         itemStack_.addUnsafeEnchantments(enchantments);
         if (hidden) {
             ItemMeta itemMeta = itemStack.getItemMeta();
+
             itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+
             itemStack_.setItemMeta(itemMeta);
         }
 

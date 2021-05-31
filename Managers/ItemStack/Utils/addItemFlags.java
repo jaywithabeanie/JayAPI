@@ -25,12 +25,14 @@ public class addItemFlags {
         // Create ItemStack
         ItemStack itemStack_ = itemStack;
 
-        // Change ItemMeta
+        // Add ItemFlags
         {
             ItemMeta itemMeta = itemStack_.getItemMeta();
+
             for (ItemFlag itemFlag : itemFlags) {
                 itemStack_.getItemMeta().addItemFlags(itemFlag);
             }
+
             itemStack_.setItemMeta(itemMeta);
         }
 
