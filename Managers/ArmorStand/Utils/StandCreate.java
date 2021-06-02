@@ -20,7 +20,7 @@ public class StandCreate {
         WorldServer server = ((CraftWorld) location.getWorld()).getHandle();
         EntityArmorStand stand = new EntityArmorStand(server);
 
-        stand.setLocation(location.getX(), location.getY() + 2, location.getZ(), 0, 0);
+        stand.setLocation(location.getX(), location.getY(), location.getZ(), 0, 0);
         stand.setCustomName(ChatColor.translateAlternateColorCodes('&', message));
         stand.setGravity(false);
 
