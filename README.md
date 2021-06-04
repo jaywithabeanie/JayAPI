@@ -9,6 +9,7 @@ Spigot API for Minecraft 1.8
 * [Inventory](#inventory)
 * [ItemStack](#itemstack)
 * [NPC](#npc)
+* [Title](#title)
 
 
 <!-- Config -->
@@ -53,3 +54,10 @@ Name | Type | Description
 `RightClickNPCEvent` | Event | Creates the RightClickNPC Event
 `PlayerJoin` | Event | Injects the PacketReader data to a Player upon joining the server
 `PlayerQuit` | Event | Uninjects the PacketReader data to a Player upon leaving the server
+
+<!-- Title -->
+## Title
+Name | Type | Description
+---- | ---- | -----------
+`Title_Manager` | Manager | Manages Titles
+`sendTitle` | Util | Displays a Title to a Player
