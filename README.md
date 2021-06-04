@@ -8,6 +8,7 @@ Spigot API for Minecraft 1.8
 * [Config](#config)
 * [Inventory](#inventory)
 * [ItemStack](#itemstack)
+* [NPC](#npc)
 
 
 <!-- Config -->
@@ -38,3 +39,17 @@ Name | Type | Description
 `createLeatherArmorItemStack` | Util | Creates an ItemStack for Leather Armor with given data
 `createPotionItemStack` | Util | Creates an ItemStack for a Potion with given data
 `createSkullItemStack` | Util | Creates an ItemStack for a Skull with given data
+
+<!-- NPC -->
+## NPC
+Name | Type | Description
+---- | ---- | -----------
+`NPC_Manager` | Manager | Manages NPCs
+`createNPC` | Util | Creates an NPC with given data
+`getLocation` | Util | Returns an NPC's Location
+`getNPCs` | Util | Returns a list of all NPCs
+`showNPCs` | Util | Shows all NPCs in the same World to a Player
+`PacketReader` | Event | Deals with Packets regarding NPCs
+`RightClickNPCEvent` | Event | Creates the RightClickNPC Event
+`PlayerJoin` | Event | Injects the PacketReader data to a Player upon joining the server
+`PlayerQuit` | Event | Uninjects the PacketReader data to a Player upon leaving the server
