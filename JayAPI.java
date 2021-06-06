@@ -1,5 +1,6 @@
 package me.jaypeg.jayapi;
 
+import me.jaypeg.jayapi.Managers.ArmorStand.ArmorStand_Manager;
 import me.jaypeg.jayapi.Managers.Config.Config_Manager;
 import me.jaypeg.jayapi.Managers.Inventory.Inventory_Manager;
 import me.jaypeg.jayapi.Managers.ItemStack.ItemStack_Manager;
@@ -9,6 +10,7 @@ import me.jaypeg.jayapi.Managers.NPC.Events.PlayerQuit;
 import me.jaypeg.jayapi.Managers.NPC.NPC_Manager;
 import me.jaypeg.jayapi.Managers.NPC.Utils.RightClickNPCEvent.PacketReader;
 import me.jaypeg.jayapi.Managers.Scoreboard.Scoreboard_Manager;
+import me.jaypeg.jayapi.Managers.World.World_Manager;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
@@ -29,6 +31,8 @@ public final class JayAPI extends JavaPlugin {
     public Message_Manager message_manager;
     public NPC_Manager npc_manager;
     public Scoreboard_Manager scoreboard_manager;
+    public World_Manager world_manager;
+    public ArmorStand_Manager armorStand_manager;
 
 
     @Override
@@ -44,6 +48,8 @@ public final class JayAPI extends JavaPlugin {
         message_manager = new Message_Manager();
         npc_manager = new NPC_Manager();
         scoreboard_manager = new Scoreboard_Manager();
+        world_manager = new World_Manager();
+        armorStand_manager = new ArmorStand_Manager();
 
         // Register Events
         {

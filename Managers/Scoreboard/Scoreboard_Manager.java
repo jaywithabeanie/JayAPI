@@ -1,47 +1,44 @@
 package me.jaypeg.jayapi.Managers.Scoreboard;
 
-import me.jaypeg.jayapi.Managers.Scoreboard.Scoreboards.LobbyMain.JayPeg;
-import me.jaypeg.jayapi.Managers.Scoreboard.Utils.createScoreboard;
-import me.jaypeg.jayapi.Managers.Scoreboard.Utils.updateScoreboard;
-import org.bukkit.Bukkit;
+import me.jaypeg.jayapi.Managers.Scoreboard.Utils.Create;
+import me.jaypeg.jayapi.Managers.Scoreboard.Utils.Edit.AddLine;
+import me.jaypeg.jayapi.Managers.Scoreboard.Utils.Edit.RemoveLine;
+import me.jaypeg.jayapi.Managers.Scoreboard.Utils.Edit.SetDisplayName;
+import me.jaypeg.jayapi.Managers.Scoreboard.Utils.Remove;
+import me.jaypeg.jayapi.Managers.Scoreboard.Utils.Update;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 
 import java.util.HashMap;
-
-
-/** @ClassType Manager Class */
-/** @ClassInfo Manages Scoreboard utils and saved Scoreboards */
+import java.util.Map;
+import java.util.UUID;
 
 public class Scoreboard_Manager {
 
+    public static Map<UUID, Scoreboard> personalScoreboard = new HashMap<>();
 
-    /** --------------------------------------------------------------------------------------------------------- */
-    /** @UtilType       Scoreboard Util                                                                           */
-    /** @UtilInfo       Creates a Scoreboard from given data                                                      */
-    /** @ParameterInfo  • scoreboardTitle: Title given to the Scoreboard                                          */
-    /**                 • scoreInfo: HashMap containing the Score's text with its corresponding placement Integer */
-    /** --------------------------------------------------------------------------------------------------------- */
-    /**                                                                                                           */
-    public static Scoreboard createScoreboard(String scoreboardTitle, HashMap<Integer, String> scoreInfo) {
-        return createScoreboard.createScoreboard(scoreboardTitle, scoreInfo);
+    public static void createScoreboard(String boardName, Player player, String boardTitle, String line, int value) {
+        Create.Create(boardName, player, boardTitle, line, value);
     }
-    /**                                                                                                           */
-    /** --------------------------------------------------------------------------------------------------------- */
 
-
-    /** --------------------------------------------------------------------------- */
-    /** @UtilType       Void Util                                                   */
-    /** @UtilInfo       Updates the Scoreboard for a Player                         */
-    /** @ParameterInfo  • player: Player the Scoreboard will be updated for         */
-    /**                 • scoreboard: Scoreboard the Player will receive            */
-    /** --------------------------------------------------------------------------- */
-    /**                                                                             */
-    public static void updateScoreboard(Player player, Scoreboard scoreboard) {
-        updateScoreboard.updateScoreboard(player, scoreboard);
+    public static void removeScoreboard(Player player) {
+        Remove.Remove(player);
     }
-    /**                                                                             */
-    /** --------------------------------------------------------------------------- */
 
+    public static void updateScoreboard(Player player) {
+        Update.Update(player);
+    }
+
+    public static void setScoreboardTitle(Player player, String boardName, String displayName) {
+        SetDisplayName.SetDisplayName(player, boardName, displayName);
+    }
+
+    public static void addScoreboardLine(Player player, String boardName, String line, int value) {
+        AddLine.AddLine(player, boardName, line, value);
+    }
+
+    public static void removeScoreboardLine(Player player, String line) {
+        RemoveLine.RemoveLine(player, line);
+    }
 
 }
