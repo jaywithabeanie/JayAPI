@@ -9,6 +9,8 @@ Spigot API for Minecraft 1.8
 * [Inventory](#inventory)
 * [ItemStack](#itemstack)
 * [NPC](#npc)
+* [Player](#player)
+* [Rank](#rank)
 * [Title](#title)
 
 
@@ -54,6 +56,40 @@ Name | Type | Description
 `RightClickNPCEvent` | Event | Creates the RightClickNPC Event
 `PlayerJoin` | Event | Injects the PacketReader data to a Player upon joining the server
 `PlayerQuit` | Event | Uninjects the PacketReader data to a Player upon leaving the server
+
+<!-- Player -->
+## Player
+Name | Type | Description
+---- | ---- | -----------
+`Player_Manager` | Manager | Manages Players
+`getFirstDateJoined` | Util | Returns the first Time and Date at which a Player first joined the server
+`getLastDateJoined` | Util | Returns the last Time and Date at which a Player joined the server
+`getName` | Util | Returns the name of a Player
+`getPermissions` | Util | Returns a list of all Permissions of a Player
+`getRank` | Util | Returns the Rank of a Player
+`hasPermission(s)` | Util | Checks whether the Player has one or more Permissions
+`hasRank` | Util | Checks whether the Player has a Rank
+`isStaff` | Util | Checks whether a Player is considered Staff
+`setRank` | Util | Sets the Rank of a Player
+`PlayerJoin` | Event | Creates & Updates the Player config File upon joining the server
+
+<!-- Rank -->
+## Rank
+Name | Type | Description
+---- | ---- | -----------
+`Rank_Manager` | Manager | Manages Ranks
+`addRank` | Util | Adds a Rank with given data
+`getPrefix` | Util | Returns the Prefix of a Rank
+`getRankPermissions` | Util | Returns the Permissions of a Rank
+`getSubRanks` | Util | Returns the SubRanks of a Rank
+`grantRankPermission(s)` | Util | Grants one or more Permissions to a Rank
+`hasPermission(s)` | Util | Checks whether a Rank has the given Permission(s)
+`isStaff` | Util | Checks whether a Rank is considered Staff
+`removeRank` | Util | Removes a Rank
+`removeRankPermission(s)` | Util | Removes one or more Permissions from a Rank
+`setPrefix` | Util | Sets the Prefix of a Rank
+`setStaff` | Util | Changes whether a Rank is considered Staff
+`setSubRanks` | Util | Sets the Sub-Ranks of a Rank (inherits Permissions)
 
 <!-- Title -->
 ## Title
