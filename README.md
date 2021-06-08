@@ -89,7 +89,7 @@ Name | Type | Description
 `removeRankPermission(s)` | Util | Removes one or more Permissions from a Rank
 `setPrefix` | Util | Sets the Prefix of a Rank
 `setStaff` | Util | Changes whether a Rank is considered Staff
-`setSubRanks` | Util | Sets the Sub-Ranks of a Rank (inherits Permissions)
+`setSubRanks` | Util | Sets the SubRanks of a Rank (inherits Permissions)
 
 <!-- Title -->
 ## Title
