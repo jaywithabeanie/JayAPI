@@ -26,7 +26,7 @@ public class ItemStack_Manager {
     /** @UtilInfo       Adds given Enchantments to an ItemStack                                                                    */
     /** @ParameterInfo  • itemStack: ItemStack to add Enchantments to                                                              */
     /**                 • enchantments: HashMap containing all the Enchantments with their corresponding level                     */
-    /**                 • hidden: Whether or not the Enchantments are hidden in the item's lore                                    */
+    /**                 • hidden: Whether or not the Enchantments are hidden in the ItemStack's lore                               */
     /** -------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                            */
     public static ItemStack addEnchantments(ItemStack itemStack, HashMap<Enchantment, Integer> enchantments, boolean hidden) {
@@ -54,7 +54,7 @@ public class ItemStack_Manager {
     /** @UtilType       ItemStack Util                                                                                                                */
     /** @UtilInfo       Creates an ItemStack for a Book with given data                                                                               */
     /** @ParameterInfo  • author: Name of the Author of the Book                                                                                      */
-    /**                 • pages: ArrayList of every Page of the Book                                                                                  */
+    /**                 • pages: ArrayList containing every Page of the Book                                                                          */
     /**                 • amount: Amount of Books in the ItemStack                                                                                    */
     /**                 • displayName: Custom name displayed for the ItemStack                                                                        */
     /**                 • lore: Lore of the ItemStack                                                                                                 */

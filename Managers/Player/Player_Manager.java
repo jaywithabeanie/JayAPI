@@ -16,6 +16,7 @@ public class Player_Manager {
     /** @UtilType       String Util                                                                                  */
     /** @UtilInfo       Returns the first Time and Date at which a Player first joined the server                    */
     /** @ParameterInfo  • UUID: UUID of the Player                                                                   */
+    /**                 • player: Player to get the Time and Date from                                               */
     /** ------------------------------------------------------------------------------------------------------------ */
     /**                                                                                                              */
     public static String getFirstDateJoined(String UUID) {
@@ -33,6 +34,7 @@ public class Player_Manager {
     /** @UtilType       String Util                                                                               */
     /** @UtilInfo       Returns the last Time and Date at which a Player joined the server                        */
     /** @ParameterInfo  • UUID: UUID of the Player                                                                */
+    /**                 • player: Player to get the Time and Date from                                            */
     /** --------------------------------------------------------------------------------------------------------- */
     /**                                                                                                           */
     public static String getLastDateJoined(String UUID) {
@@ -63,7 +65,7 @@ public class Player_Manager {
     /** @UtilType       List<String> Util                                                                      */
     /** @UtilInfo       Returns a list of all Permissions of a Player                                          */
     /** @ParameterInfo  • UUID: UUID of the Player                                                             */
-    /**                 • Player: Player to get the Permissions of                                             */
+    /**                 • player: Player to get the Permissions of                                             */
     /** ------------------------------------------------------------------------------------------------------ */
     /**                                                                                                        */
     public static List<String> getPermissions(String UUID) {
@@ -81,7 +83,7 @@ public class Player_Manager {
     /** @UtilType       String Util                                                 */
     /** @UtilInfo       Returns the Rank of a Player                                */
     /** @ParameterInfo  • UUID: UUID of the Player to get the Rank from             */
-    /**                 • Player: Player to get the Rank of                         */
+    /**                 • player: Player to get the Rank of                         */
     /** --------------------------------------------------------------------------- */
     /**                                                                             */
     public static String getRank(String UUID) {
@@ -99,23 +101,24 @@ public class Player_Manager {
     /** @UtilType       Boolean Util                                                    */
     /** @UtilInfo       Checks whether the Player has one or more Permissions           */
     /** @ParameterInfo  • UUID: UUID of the Player                                      */
-    /**                 • Player: Player to check the Permission(s) of                  */
+    /**                 • player: Player to check the Permission(s) of                  */
+    /**                 • permission(s): Permission(s) to check                         */
     /** ------------------------------------------------------------------------------- */
     /**                                                                                 */
     public static boolean hasPermission(String UUID, String permission) {
-        return hasPermission.hasPermission(UUID, permission);
+        return hasPermissions.hasPermission(UUID, permission);
     }
     /**                                                                                 */
     public static boolean hasPermission(Player player, String permission) {
-        return hasPermission.hasPermission(player, permission);
+        return hasPermissions.hasPermission(player, permission);
     }
     /**                                                                                 */
     public static boolean hasPermissions(String UUID, List<String> permissions) {
-        return hasPermission.hasPermissions(UUID, permissions);
+        return hasPermissions.hasPermissions(UUID, permissions);
     }
     /**                                                                                 */
     public static boolean hasPermissions(Player player, List<String> permissions) {
-        return hasPermission.hasPermissions(player, permissions);
+        return hasPermissions.hasPermissions(player, permissions);
     }
     /**                                                                                 */
     /** ------------------------------------------------------------------------------- */
@@ -125,7 +128,8 @@ public class Player_Manager {
     /** @UtilType       Boolean Util                                                                    */
     /** @UtilInfo       Checks whether the Player has a Rank                                            */
     /** @ParameterInfo  • UUID: UUID of the Player                                                      */
-    /**                 • Player: Player to check the Rank of                                           */
+    /**                 • player: Player to check the Rank of                                           */
+    /**                 • rank: Rank to check                                                           */
     /** ----------------------------------------------------------------------------------------------- */
     /**                                                                                                 */
     public static boolean hasRank(String UUID, String rank) {
@@ -160,7 +164,8 @@ public class Player_Manager {
     /** @UtilType       Void Util                                                             */
     /** @UtilInfo       Sets the Rank of a Player                                             */
     /** @ParameterInfo  • UUID: UUID of the Player                                            */
-    /**                 • Player: Player to set the Rank of                                   */
+    /**                 • player: Player to set the Rank of                                   */
+    /**                 • rank: Rank to change to                                             */
     /** ------------------------------------------------------------------------------------- */
     /**                                                                                       */
     public static void setRank(String UUID, String rank) {

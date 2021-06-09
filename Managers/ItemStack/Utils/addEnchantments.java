@@ -19,7 +19,7 @@ public class addEnchantments {
     /** @UtilInfo       Adds given Enchantments to an ItemStack                                                                    */
     /** @ParameterInfo  • itemStack: ItemStack to add Enchantments to                                                              */
     /**                 • enchantments: HashMap containing all the Enchantments with their corresponding level                     */
-    /**                 • hidden: Whether or not the Enchantments are hidden in the item's lore                                    */
+    /**                 • hidden: Whether or not the Enchantments are hidden in the ItemStack's lore                               */
     /** -------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                            */
     public static ItemStack addEnchantments(ItemStack itemStack, HashMap<Enchantment, Integer> enchantments, boolean hidden) {
@@ -28,13 +28,16 @@ public class addEnchantments {
         ItemStack itemStack_ = itemStack;
 
         // Add Enchantments
-        itemStack_.addUnsafeEnchantments(enchantments);
-        if (hidden) {
-            ItemMeta itemMeta = itemStack.getItemMeta();
+        {
+            itemStack_.addUnsafeEnchantments(enchantments);
 
-            itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+            if (hidden) {
+                ItemMeta itemMeta = itemStack.getItemMeta();
 
-            itemStack_.setItemMeta(itemMeta);
+                itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+
+                itemStack_.setItemMeta(itemMeta);
+            }
         }
 
         // Return ItemStack

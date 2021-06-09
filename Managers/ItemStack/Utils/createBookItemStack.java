@@ -17,7 +17,7 @@ public class createBookItemStack {
     /** @UtilType       ItemStack Util                                                                                                                */
     /** @UtilInfo       Creates an ItemStack for a Book with given data                                                                               */
     /** @ParameterInfo  • author: Name of the Author of the Book                                                                                      */
-    /**                 • pages: ArrayList of every Page of the Book                                                                                  */
+    /**                 • pages: ArrayList containing every Page of the Book                                                                          */
     /**                 • amount: Amount of Books in the ItemStack                                                                                    */
     /**                 • displayName: Custom name displayed for the ItemStack                                                                        */
     /**                 • lore: Lore of the ItemStack                                                                                                 */

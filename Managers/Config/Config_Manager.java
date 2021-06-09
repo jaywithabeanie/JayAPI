@@ -19,7 +19,7 @@ public class Config_Manager {
     /**                 • fileName: Name the config File will be given                                                                                 */
     /** ---------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                                */
-    public void createConfig(String directoryPath, String fileName) {
+    public static void createConfig(String directoryPath, String fileName) {
         createConfig.createConfig(directoryPath, fileName);
     }
     /**                                                                                                                                                */
@@ -33,7 +33,7 @@ public class Config_Manager {
     /**                 • fileName: Name of the config File                                                                                       */
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                           */
-    public YamlConfiguration getConfig(String directoryPath, String fileName) {
+    public static YamlConfiguration getConfig(String directoryPath, String fileName) {
         return getConfig.getConfig(directoryPath, fileName);
     }
     /**                                                                                                                                           */
@@ -48,7 +48,7 @@ public class Config_Manager {
     /**                 • configFile: YamlConfiguration File to save                                                                                 */
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                              */
-    public void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
+    public static void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
         saveConfig.saveConfig(directoryPath, fileName, configFile);
     }
     /**                                                                                                                                              */

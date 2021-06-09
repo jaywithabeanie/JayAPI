@@ -58,11 +58,15 @@ public class createItemStack {
         ItemStack itemStack = new ItemStack(material, amount, (short) type);
 
         // Change ItemMeta
-        ItemMeta meta = itemStack.getItemMeta();
-        assert meta != null;
-        meta.setDisplayName(displayName);
-        meta.setLore(lore);
-        itemStack.setItemMeta(meta);
+        {
+            ItemMeta meta = itemStack.getItemMeta();
+
+            assert meta != null;
+            meta.setDisplayName(displayName);
+            meta.setLore(lore);
+
+            itemStack.setItemMeta(meta);
+        }
 
         // Return ItemStack
         return itemStack;
@@ -75,10 +79,14 @@ public class createItemStack {
         ItemStack itemStack = new ItemStack(material, amount, (short) type);
 
         // Change ItemMeta
-        ItemMeta meta = itemStack.getItemMeta();
-        assert meta != null;
-        meta.setLore(lore);
-        itemStack.setItemMeta(meta);
+        {
+            ItemMeta meta = itemStack.getItemMeta();
+
+            assert meta != null;
+            meta.setLore(lore);
+
+            itemStack.setItemMeta(meta);
+        }
 
         // Return ItemStack
         return itemStack;

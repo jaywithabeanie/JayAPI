@@ -107,11 +107,11 @@ public class Rank_Manager {
     /** ----------------------------------------------------------------------------- */
     /**                                                                               */
     public static boolean hasPermission(String rank, String permission) {
-        return hasPermission.hasPermission(rank, permission);
+        return hasPermissions.hasPermission(rank, permission);
     }
     /**                                                                               */
     public static boolean hasPermissions(String rank, List<String> permissions) {
-        return hasPermission.hasPermissions(rank, permissions);
+        return hasPermissions.hasPermissions(rank, permissions);
     }
     /**                                                                               */
     /** ----------------------------------------------------------------------------- */
@@ -191,7 +191,7 @@ public class Rank_Manager {
 
     /** ----------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                   */
-    /** @UtilInfo       Sets the Sub-Ranks of a Rank (inherits Permissions)                                         */
+    /** @UtilInfo       Sets the SubRanks of a Rank (inherits Permissions)                                         */
     /** @ParameterInfo  • rank: Rank to set the Sub-Ranks of                                                        */
     /**                 • subRanks: SubRanks to add to the Rank                                                     */
     /** ----------------------------------------------------------------------------------------------------------- */

@@ -51,7 +51,6 @@ public class PlayerJoin implements Listener {
             Config_Manager.saveConfig("JayAPI.Players", UUID, configuration);
         }
 
-
     }
     /**                                                                              */
     /** ---------------------------------------------------------------------------- */

@@ -26,25 +26,31 @@ public class sendTitle {
     /**                                                                                                                                            */
     public static void sendTitle(Player player, String title, Integer displayTime) {
 
+        // Create Packet
         PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), 0, displayTime * 20, 0);
 
+        // Send Packet
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
 
     }
     /**                                                                                                                                            */
     public static void sendTitle(Player player, String title, Integer displayTime, Integer fadeInTime, Integer fadeOutTime) {
 
-        PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), fadeInTime, displayTime * 20, fadeOutTime);
+        // Create Packet
+        PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), fadeInTime * 20, displayTime * 20, fadeOutTime * 20);
 
+        // Send Packet
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
 
     }
     /**                                                                                                                                            */
     public static void sendTitle(Player player, String title, String subTitle, Integer displayTime) {
 
+        // Create Packets
         PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), 0, displayTime * 20, 0);
         PacketPlayOutTitle subTitlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.SUBTITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + subTitle + "\"}"), 0, displayTime * 20, 0);
 
+        // Send Packets
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(subTitlePacket);
 
@@ -52,9 +58,11 @@ public class sendTitle {
     /**                                                                                                                                            */
     public static void sendTitle(Player player, String title, String subTitle, Integer displayTime, Integer fadeInTime, Integer fadeOutTime) {
 
-        PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), fadeInTime, displayTime * 20, fadeOutTime);
-        PacketPlayOutTitle subTitlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.SUBTITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + subTitle + "\"}"), fadeInTime, displayTime * 20, fadeOutTime);
+        // Create Packets
+        PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), fadeInTime * 20, displayTime * 20, fadeOutTime * 20);
+        PacketPlayOutTitle subTitlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.SUBTITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + subTitle + "\"}"), fadeInTime * 20, displayTime * 20, fadeOutTime * 20);
 
+        // Send Packets
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(subTitlePacket);
 
