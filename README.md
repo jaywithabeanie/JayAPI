@@ -8,6 +8,7 @@ Spigot API for Minecraft 1.8
 * [Config](#config)
 * [Inventory](#inventory)
 * [ItemStack](#itemstack)
+* [Message](#message)
 * [NPC](#npc)
 * [Player](#player)
 * [Rank](#rank)
@@ -42,6 +43,16 @@ Name | Type | Description
 `createLeatherArmorItemStack` | Util | Creates an ItemStack for Leather Armor with given data
 `createPotionItemStack` | Util | Creates an ItemStack for a Potion with given data
 `createSkullItemStack` | Util | Creates an ItemStack for a Skull with given data
+
+<!-- Message -->
+## Message
+Name | Type | Description
+---- | ---- | -----------
+`Message_Manager` | Manager | Manages Messages
+`centerMessage` | Util | Returns a centered Message
+`sendActionBarMessage` | Util | Sends a Message in the Action Bar
+`sendMessage` | Util | Sends a Message to a World
+`MessageCenter` | Enum | Contains and Manages character data to center Messages
 
 <!-- NPC -->
 ## NPC
