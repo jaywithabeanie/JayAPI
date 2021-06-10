@@ -51,6 +51,7 @@ Name | Type | Description
 `createNPC` | Util | Creates an NPC with given data
 `getLocation` | Util | Returns an NPC's Location
 `getNPCs` | Util | Returns a list of all NPCs
+`hideNPCs` | Util | Hides all NPCs for a Player
 `showNPCs` | Util | Shows all NPCs in the same World to a Player
 `PacketReader` | Event | Deals with Packets regarding NPCs
 `RightClickNPCEvent` | Event | Creates the RightClickNPC Event
