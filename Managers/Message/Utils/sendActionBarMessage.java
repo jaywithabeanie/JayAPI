@@ -14,7 +14,7 @@ public class sendActionBarMessage {
 
     /** ------------------------------------------------------------------------ */
     /** @UtilType       Void Util                                                */
-    /** @UtilInfo       Returns a centered Message                               */
+    /** @UtilInfo       Sends a Message in the Action Bar                        */
     /** @ParameterInfo  • UUID: UUID of the Player to send the Message to        */
     /**                 • player: Player to send the Message to                  */
     /**                 • world: World to send the Message to                    */

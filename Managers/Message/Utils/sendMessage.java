@@ -4,6 +4,10 @@ import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
+
+/** @ClassType Util Class */
+/** @ClassInfo Sends a Message to a World */
+
 public class sendMessage {
 
 
