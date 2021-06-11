@@ -13,6 +13,7 @@ Spigot API for Minecraft 1.8
 * [Player](#player)
 * [Rank](#rank)
 * [Title](#title)
+* [World](#world)
 
 
 <!-- Config -->
@@ -109,3 +110,18 @@ Name | Type | Description
 ---- | ---- | -----------
 `Title_Manager` | Manager | Manages Titles
 `sendTitle` | Util | Displays a Title to a Player
+
+<!-- World -->
+## World
+Name | Type | Description
+---- | ---- | -----------
+`World_Manager` | Manager | Manages Worlds
+`loadWorld` | Util | Changes a Game Rule for a World
+`setBorder` | Util | Sets the Border of a World
+`setDifficulty` | Util | Sets the Difficulty of a World
+`setGameRule` | Util | Changes a Game Rule for a World
+`setSpawn` | Util | Sets the Spawn of a World
+`setTime` | Util | Sets the Time of a World
+`setWeather` | Util | Sets the Weather of a World
+`teleportToWorld` | Util | Teleports a Player to a World
+`unloadWorld` | Util | Unloads a World
