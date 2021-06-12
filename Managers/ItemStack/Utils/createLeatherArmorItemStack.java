@@ -1,4 +1,4 @@
-package me.jaypeg.jayapi.Managers.ItemStack.Utils;
+package me.jayy.jayapi.Managers.ItemStack.Utils;
 
 import org.bukkit.Color;
 import org.bukkit.Material;

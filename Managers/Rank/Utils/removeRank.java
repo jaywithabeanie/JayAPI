@@ -1,4 +1,4 @@
-package me.jaypeg.jayapi.Managers.Rank.Utils;
+package me.jayy.jayapi.Managers.Rank.Utils;
 
 import org.bukkit.Bukkit;
 
@@ -14,7 +14,7 @@ public class removeRank {
     /** -------------------------------------------- */
     /** @UtilType       Void Util                    */
     /** @UtilInfo       Removes a Rank               */
-    /** @ParameterInfo  • rank: Rank to remove       */
+    /** @ParameterInfo  • rank: Rank to removeScoreboard       */
     /** -------------------------------------------- */
     /**                                              */
     public static void removeRank(String rank) {

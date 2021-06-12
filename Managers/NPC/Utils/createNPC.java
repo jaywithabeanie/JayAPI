@@ -1,11 +1,11 @@
-package me.jaypeg.jayapi.Managers.NPC.Utils;
+package me.jayy.jayapi.Managers.NPC.Utils;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
-import me.jaypeg.jayapi.JayAPI;
-import me.jaypeg.jayapi.Managers.NPC.NPC_Manager;
+import me.jayy.jayapi.JayAPI;
+import me.jayy.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import net.minecraft.server.v1_8_R3.MinecraftServer;
 import net.minecraft.server.v1_8_R3.PlayerInteractManager;

@@ -1,17 +1,13 @@
-package me.jaypeg.jayapi.Managers.ItemStack.Utils;
-
-
-/** @ClassType Util Class */
+package me.jayy.jayapi.Managers.ItemStack.Utils;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.inventory.meta.SkullMeta;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 import java.util.ArrayList;
 
+
+/** @ClassType Util Class */
 /** @ClassInfo Creates an ItemStack for a Skull with given data */
 
 public class createSkullItemStack {

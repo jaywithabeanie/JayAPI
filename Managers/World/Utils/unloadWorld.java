@@ -1,4 +1,4 @@
-package me.jaypeg.jayapi.Managers.World.Utils;
+package me.jayy.jayapi.Managers.World.Utils;
 
 import org.bukkit.World;
 

@@ -1,4 +1,4 @@
-package me.jaypeg.jayapi.Managers.World.Utils;
+package me.jayy.jayapi.Managers.World.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.WorldCreator;
@@ -12,7 +12,7 @@ public class loadWorld {
 
     /** ------------------------------------------------------ */
     /** @UtilType       Void Util                              */
-    /** @UtilInfo       Changes a Game Rule for a World        */
+    /** @UtilInfo       Loads a World                          */
     /** @ParameterInfo  • worldName: Name of the World to load */
     /** ------------------------------------------------------ */
     /**                                                        */

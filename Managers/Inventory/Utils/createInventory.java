@@ -1,4 +1,4 @@
-package me.jaypeg.jayapi.Managers.Inventory.Utils;
+package me.jayy.jayapi.Managers.Inventory.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;

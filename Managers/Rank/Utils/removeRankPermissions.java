@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.Rank.Utils;
+package me.jayy.jayapi.Managers.Rank.Utils;
 
-import me.jaypeg.jayapi.Managers.Config.Config_Manager;
+import me.jayy.jayapi.Managers.Config.Config_Manager;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.util.ArrayList;
@@ -16,8 +16,8 @@ public class removeRankPermissions {
     /** --------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                         */
     /** @UtilInfo       Removes one or more Permissions from a Rank                       */
-    /** @ParameterInfo  • rank: Rank to remove one or more Permissions from               */
-    /**                 • permission(s): Permission(s) to remove from the Rank            */
+    /** @ParameterInfo  • rank: Rank to removeScoreboard one or more Permissions from               */
+    /**                 • permission(s): Permission(s) to removeScoreboard from the Rank            */
     /** --------------------------------------------------------------------------------- */
     /**                                                                                   */
     public static void removeRankPermission(String rank, String permission) {
@@ -27,7 +27,7 @@ public class removeRankPermissions {
         List<String> currentPermissions = configuration.getStringList(rank + ".Permissions");
         if (currentPermissions == null) currentPermissions = new ArrayList<>();
 
-        // Remove Permission
+        // removeScoreboard Permission
         currentPermissions.remove(permission);
         configuration.set(rank + ".Permissions", currentPermissions);
 
@@ -43,7 +43,7 @@ public class removeRankPermissions {
         List<String> currentPermissions = configuration.getStringList(rank + ".Permissions");
         if (currentPermissions == null) currentPermissions = new ArrayList<>();
 
-        // Remove Permissions
+        // removeScoreboard Permissions
         currentPermissions.removeAll(permissions);
         configuration.set(rank + ".Permissions", currentPermissions);
 

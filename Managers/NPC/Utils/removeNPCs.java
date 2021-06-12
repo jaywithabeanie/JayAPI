@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.NPC.Utils;
+package me.jayy.jayapi.Managers.NPC.Utils;
 
-import me.jaypeg.jayapi.Managers.NPC.NPC_Manager;
+import me.jayy.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import org.bukkit.entity.Player;
 
@@ -17,8 +17,8 @@ public class removeNPCs {
     /** ----------------------------------------------------------------------- */
     /** @UtilType       Void Util                                               */
     /** @UtilInfo       Removes one or more linked NPCs for a Player            */
-    /** @ParameterInfo  • player: Player to remove the NPC(s) for               */
-    /**                 • npc(s): NPC(s) to remove                              */
+    /** @ParameterInfo  • player: Player to removeScoreboard the NPC(s) for               */
+    /**                 • npc(s): NPC(s) to removeScoreboard                              */
     /** ----------------------------------------------------------------------- */
     /**                                                                         */
     public static void removeNPC(Player player, EntityPlayer npc) {
@@ -26,7 +26,7 @@ public class removeNPCs {
         // Get Linked NPCs
         Set<EntityPlayer> linkedNPCs = NPC_Manager.getNPCs(player);
 
-        // Remove NPC
+        // removeScoreboard NPC
         linkedNPCs.remove(npc);
         NPC_Manager.linkedNPCs.put(player, linkedNPCs);
 
@@ -37,7 +37,7 @@ public class removeNPCs {
         // Get Linked NPCs
         Set<EntityPlayer> linkedNPCs = NPC_Manager.getNPCs(player);
 
-        // Remove NPCs
+        // removeScoreboard NPCs
         npcs.forEach(linkedNPCs :: remove);
         NPC_Manager.linkedNPCs.put(player, linkedNPCs);
 

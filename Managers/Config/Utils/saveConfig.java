@@ -1,4 +1,4 @@
-package me.jaypeg.jayapi.Managers.Config.Utils;
+package me.jayy.jayapi.Managers.Config.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;

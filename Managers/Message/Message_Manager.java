@@ -1,10 +1,8 @@
-package me.jaypeg.jayapi.Managers.Message;
+package me.jayy.jayapi.Managers.Message;
 
-import me.jaypeg.jayapi.Managers.Message.Utils.centerMessage;
-import me.jaypeg.jayapi.Managers.Message.Utils.sendActionBarMessage;
-import me.jaypeg.jayapi.Managers.Message.Utils.sendMessage;
-import me.jaypeg.jayapi.Managers.Message.Enums.MessageCenter;
-import org.bukkit.ChatColor;
+import me.jayy.jayapi.Managers.Message.Utils.centerMessage;
+import me.jayy.jayapi.Managers.Message.Utils.sendActionBarMessage;
+import me.jayy.jayapi.Managers.Message.Utils.sendMessage;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
@@ -30,11 +28,11 @@ public class Message_Manager {
 
     /** ------------------------------------------------------------------------ */
     /** @UtilType       Void Util                                                */
-    /** @UtilInfo       Sends a Message in the Action Bar                        */
-    /** @ParameterInfo  • UUID: UUID of the Player to send the Message to        */
-    /**                 • player: Player to send the Message to                  */
-    /**                 • world: World to send the Message to                    */
-    /**                 • message: Player to send the Message to                 */
+    /** @UtilInfo       Sends a Message in the Action Assists                        */
+    /** @ParameterInfo  • UUID: UUID of the Player to sendBossBar the Message to        */
+    /**                 • player: Player to sendBossBar the Message to                  */
+    /**                 • world: World to sendBossBar the Message to                    */
+    /**                 • message: Player to sendBossBar the Message to                 */
     /** ------------------------------------------------------------------------ */
     /**                                                                          */
     public static void sendActionBarMessage(Player player, String message) {
@@ -55,9 +53,9 @@ public class Message_Manager {
     /** ------------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                     */
     /** @UtilInfo       Sends a Message to a World                                                                    */
-    /** @ParameterInfo  • world: World to send the Message in                                                         */
-    /**                 • worldName: Name of the World to send the Message in                                         */
-    /**                 • message: Message to send                                                                    */
+    /** @ParameterInfo  • world: World to sendBossBar the Message in                                                         */
+    /**                 • worldName: Name of the World to sendBossBar the Message in                                         */
+    /**                 • message: Message to sendBossBar                                                                    */
     /** ------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                               */
     public static void sendMessage(World world, String message) {

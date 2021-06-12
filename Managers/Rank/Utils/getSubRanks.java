@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.Rank.Utils;
+package me.jayy.jayapi.Managers.Rank.Utils;
 
-import me.jaypeg.jayapi.Managers.Config.Config_Manager;
+import me.jayy.jayapi.Managers.Config.Config_Manager;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.util.List;

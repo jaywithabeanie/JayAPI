@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.Rank;
+package me.jayy.jayapi.Managers.Rank;
 
-import me.jaypeg.jayapi.Managers.Rank.Utils.*;
+import me.jayy.jayapi.Managers.Rank.Utils.*;
 import org.bukkit.Color;
 
 import java.util.List;
@@ -133,7 +133,7 @@ public class Rank_Manager {
     /** ----------------------------------------------------------------------- */
     /** @UtilType       Void Util                                               */
     /** @UtilInfo       Removes a Rank                                          */
-    /** @ParameterInfo  • rank: Rank to remove                                  */
+    /** @ParameterInfo  • rank: Rank to removeScoreboard                                  */
     /** ----------------------------------------------------------------------- */
     /**                                                                         */
     public static void removeRank(String rank) {
@@ -146,8 +146,8 @@ public class Rank_Manager {
     /** --------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                         */
     /** @UtilInfo       Removes one or more Permissions from a Rank                       */
-    /** @ParameterInfo  • rank: Rank to remove one or more Permissions from               */
-    /**                 • permission(s): Permission(s) to remove from the Rank            */
+    /** @ParameterInfo  • rank: Rank to removeScoreboard one or more Permissions from               */
+    /**                 • permission(s): Permission(s) to removeScoreboard from the Rank            */
     /** --------------------------------------------------------------------------------- */
     /**                                                                                   */
     public static void removeRankPermission(String rank, String permission) {
@@ -178,7 +178,7 @@ public class Rank_Manager {
     /** --------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                               */
     /** @UtilInfo       Changes whether a Rank is considered Staff                              */
-    /** @ParameterInfo  • rank: Rank to set or remove from Staff                                */
+    /** @ParameterInfo  • rank: Rank to set or removeScoreboard from Staff                                */
     /**                 • staff: Whether the Rank is considered Staff                           */
     /** --------------------------------------------------------------------------------------- */
     /**                                                                                         */

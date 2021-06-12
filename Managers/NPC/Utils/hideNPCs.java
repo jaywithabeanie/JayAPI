@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.NPC.Utils;
+package me.jayy.jayapi.Managers.NPC.Utils;
 
-import me.jaypeg.jayapi.Managers.NPC.NPC_Manager;
+import me.jayy.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import net.minecraft.server.v1_8_R3.PacketPlayOutEntityDestroy;
 import net.minecraft.server.v1_8_R3.PacketPlayOutPlayerInfo;

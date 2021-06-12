@@ -1,7 +1,7 @@
-package me.jaypeg.jayapi.Managers.Rank.Utils;
+package me.jayy.jayapi.Managers.Rank.Utils;
 
-import me.jaypeg.jayapi.Managers.Config.Config_Manager;
-import me.jaypeg.jayapi.Managers.Rank.Rank_Manager;
+import me.jayy.jayapi.Managers.Config.Config_Manager;
+import me.jayy.jayapi.Managers.Rank.Rank_Manager;
 import org.bukkit.Color;
 
 import java.util.List;

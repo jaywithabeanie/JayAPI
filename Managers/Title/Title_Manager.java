@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.Title;
+package me.jayy.jayapi.Managers.Title;
 
-import me.jaypeg.jayapi.Managers.Title.Utils.sendTitle;
+import me.jayy.jayapi.Managers.Title.Utils.*;
 import org.bukkit.entity.Player;
 
 
@@ -13,9 +13,9 @@ public class Title_Manager {
     /** ------------------------------------------------------------------------------------------------------------------------------------------ */
     /** @UtilType       Void Util                                                                                                                  */
     /** @UtilInfo       Displays a Title to a Player                                                                                               */
-    /** @ParameterInfo  • player: Player to send the Title to                                                                                      */
-    /**                 • title: Title to send to the Player                                                                                       */
-    /**                 • subTitle: Subtitle to send to the Player                                                                                 */
+    /** @ParameterInfo  • player: Player to sendBossBar the Title to                                                                                      */
+    /**                 • title: Title to sendBossBar to the Player                                                                                       */
+    /**                 • subTitle: Subtitle to sendBossBar to the Player                                                                                 */
     /**                 • displayTime: Time to Display the Title for (seconds)                                                                     */
     /**                 • fadeInTime: Time the fade-in of the Title lasts for (seconds)                                                            */
     /**                 • fadeOutTime: Time the fade-out of the Title lasts for (seconds)                                                          */

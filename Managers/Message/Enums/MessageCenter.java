@@ -1,4 +1,4 @@
-package me.jaypeg.jayapi.Managers.Message.Enums;
+package me.jayy.jayapi.Managers.Message.Enums;
 
 
 /** @ClassType Enum Class */

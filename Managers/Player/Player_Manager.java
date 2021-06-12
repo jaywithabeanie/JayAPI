@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.Player;
+package me.jayy.jayapi.Managers.Player;
 
-import me.jaypeg.jayapi.Managers.Player.Utils.*;
+import me.jayy.jayapi.Managers.Player.Utils.*;
 import org.bukkit.entity.Player;
 
 import java.util.List;

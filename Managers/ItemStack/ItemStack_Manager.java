@@ -1,13 +1,11 @@
-package me.jaypeg.jayapi.Managers.ItemStack;
+package me.jayy.jayapi.Managers.ItemStack;
 
-import me.jaypeg.jayapi.Managers.ItemStack.Utils.*;
+import me.jayy.jayapi.Managers.ItemStack.Utils.*;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.LeatherArmorMeta;
-import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 

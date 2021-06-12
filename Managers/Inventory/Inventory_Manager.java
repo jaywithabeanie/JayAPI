@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.Inventory;
+package me.jayy.jayapi.Managers.Inventory;
 
-import me.jaypeg.jayapi.Managers.Inventory.Utils.createInventory;
+import me.jayy.jayapi.Managers.Inventory.Utils.createInventory;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 

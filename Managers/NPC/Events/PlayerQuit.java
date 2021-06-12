@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.NPC.Events;
+package me.jayy.jayapi.Managers.NPC.Events;
 
-import me.jaypeg.jayapi.Managers.NPC.Events.RightClickNPCEvent.PacketReader;
+import me.jayy.jayapi.Managers.NPC.Events.RightClickNPCEvent.PacketReader;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;

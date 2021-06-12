@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.Message.Utils;
+package me.jayy.jayapi.Managers.Message.Utils;
 
-import me.jaypeg.jayapi.Managers.Message.Enums.MessageCenter;
+import me.jayy.jayapi.Managers.Message.Enums.MessageCenter;
 import org.bukkit.ChatColor;
 
 

@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.World;
+package me.jayy.jayapi.Managers.World;
 
-import me.jaypeg.jayapi.Managers.World.Utils.*;
+import me.jayy.jayapi.Managers.World.Utils.*;
 import org.bukkit.Difficulty;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -15,7 +15,7 @@ public class World_Manager {
 
     /** ------------------------------------------------------------------------------ */
     /** @UtilType       Void Util                                                      */
-    /** @UtilInfo       Changes a Game Rule for a World                                */
+    /** @UtilInfo       Loads a World                                                  */
     /** @ParameterInfo  • worldName: Name of the World to load                         */
     /** ------------------------------------------------------------------------------ */
     /**                                                                                */

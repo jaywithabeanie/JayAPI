@@ -1,7 +1,7 @@
-package me.jaypeg.jayapi.Managers.NPC.Utils;
+package me.jayy.jayapi.Managers.NPC.Utils;
 
-import me.jaypeg.jayapi.JayAPI;
-import me.jaypeg.jayapi.Managers.NPC.NPC_Manager;
+import me.jayy.jayapi.JayAPI;
+import me.jayy.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.*;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;

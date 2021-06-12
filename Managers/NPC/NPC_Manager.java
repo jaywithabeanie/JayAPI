@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.NPC;
+package me.jayy.jayapi.Managers.NPC;
 
-import me.jaypeg.jayapi.Managers.NPC.Utils.*;
+import me.jayy.jayapi.Managers.NPC.Utils.*;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
@@ -103,8 +103,8 @@ public class NPC_Manager {
     /** ---------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                  */
     /** @UtilInfo       Removes one or more linked NPCs for a Player                                               */
-    /** @ParameterInfo  • player: Player to remove the NPC(s) for                                                  */
-    /**                 • npc(s): NPC(s) to remove                                                                 */
+    /** @ParameterInfo  • player: Player to removeScoreboard the NPC(s) for                                                  */
+    /**                 • npc(s): NPC(s) to removeScoreboard                                                                 */
     /** ---------------------------------------------------------------------------------------------------------- */
     /**                                                                                                            */
     public static void removeNPC(Player player, EntityPlayer npc) {

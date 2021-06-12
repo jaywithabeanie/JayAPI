@@ -1,10 +1,10 @@
-package me.jaypeg.jayapi.Managers.NPC.Events.RightClickNPCEvent;
+package me.jayy.jayapi.Managers.NPC.Events.RightClickNPCEvent;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
-import me.jaypeg.jayapi.JayAPI;
-import me.jaypeg.jayapi.Managers.NPC.NPC_Manager;
+import me.jayy.jayapi.JayAPI;
+import me.jayy.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import net.minecraft.server.v1_8_R3.Packet;
 import org.bukkit.Bukkit;
