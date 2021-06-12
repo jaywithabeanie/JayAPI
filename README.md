@@ -5,6 +5,7 @@ Spigot API for Minecraft 1.8
 
 <!-- Content Table / Managers -->
 ## Managers
+* [BossBar](#bossbar)
 * [Config](#config)
 * [Inventory](#inventory)
 * [ItemStack](#itemstack)
@@ -12,9 +13,20 @@ Spigot API for Minecraft 1.8
 * [NPC](#npc)
 * [Player](#player)
 * [Rank](#rank)
+* [Scoreboard](#scoreboard)
+* [TabList](#tablist)
 * [Title](#title)
 * [World](#world)
 
+
+<!-- BossBar -->
+## BossBar
+Name | Type | Description
+---- | ---- | -----------
+`BossBar_Manager` | Manager | Manages Boss Bars
+`removeBossBar` | Util | Removes the Boss Bar for a Player
+`sendBossBar` | Util | Sends a Boss Bar to a Player
+`Bar` | Assist | Assists with the creation and removal of Boss Bars
 
 <!-- Config -->
 ## Config
@@ -103,6 +115,27 @@ Name | Type | Description
 `setPrefix` | Util | Sets the Prefix of a Rank
 `setStaff` | Util | Changes whether a Rank is considered Staff
 `setSubRanks` | Util | Sets the SubRanks of a Rank (inherits Permissions)
+
+<!-- Scoreboard -->
+## Scoreboard
+Name | Type | Description
+---- | ---- | -----------
+`Scoreboard_Manager` | Manager | Manages Scoreboards
+`addLine` | Util | Adds a line to the Scoreboard of a Player
+`createScoreboard` | Util | Creates a Scoreboard from given data
+`removeLine` | Util | Removes a line of text from the Scoreboard of a Player
+`removeScoreboard` | Util | Removes the Scoreboard of a Player
+`setScoreboard` | Util | Sets the Scoreboard of a Player
+`setTitle` | Util | Sets the Title of a Scoreboard
+
+<!-- TabList -->
+## TabList
+Name | Type | Description
+---- | ---- | -----------
+`TabList_Manager` | Manager | Manages Tab Lists
+`updateTabList` | Util | Updates the Tab List for a Player
+`setTeam` | Util | Sets the Team of a Player
+`updateTeam` | Util | Updates the Prefix and/or Suffix of a Team
 
 <!-- Title -->
 ## Title
