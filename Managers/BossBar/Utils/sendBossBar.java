@@ -21,8 +21,8 @@ public class sendBossBar {
     /**                                                            */
     public static void sendBossBar(Player player, String message) {
 
-        if (!BossBar_Manager.ActiveBossBar.containsKey(player.getUniqueId()))
-            BossBar_Manager.ActiveBossBar.put(player.getUniqueId(), new Bar(player, ChatColor.translateAlternateColorCodes('&', message)));
+        if (!BossBar_Manager.activeBossBar.containsKey(player.getUniqueId()))
+            BossBar_Manager.activeBossBar.put(player.getUniqueId(), new Bar(player, ChatColor.translateAlternateColorCodes('&', message)));
 
     }
     /**                                                            */

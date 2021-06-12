@@ -21,7 +21,7 @@ public class BossBar_Manager {
     /** @VariableInfo   HashMap containing all the Players' UUIDs and their corresponding Boss Bar */
     /** ------------------------------------------------------------------------------------------ */
     /**                                                                                            */
-    public static Map<UUID, Bar> ActiveBossBar = new HashMap<>();
+    public static Map<UUID, Bar> activeBossBar = new HashMap<>();
     /**                                                                                            */
     /** ------------------------------------------------------------------------------------------ */
 

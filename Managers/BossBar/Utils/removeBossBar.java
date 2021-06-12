@@ -18,9 +18,9 @@ public class removeBossBar {
     /**                                                             */
     public static void removeBossBar(Player player) {
 
-        if (BossBar_Manager.ActiveBossBar.containsKey(player.getUniqueId())) {
-            (BossBar_Manager.ActiveBossBar.get(player.getUniqueId())).end();
-            BossBar_Manager.ActiveBossBar.remove(player.getUniqueId());
+        if (BossBar_Manager.activeBossBar.containsKey(player.getUniqueId())) {
+            (BossBar_Manager.activeBossBar.get(player.getUniqueId())).end();
+            BossBar_Manager.activeBossBar.remove(player.getUniqueId());
         }
 
     }
