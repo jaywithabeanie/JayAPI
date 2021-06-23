@@ -38,7 +38,7 @@ Name | Type | Description
 `saveConfig` | Util | Saves a config File in a given path
 
 <!-- Inventory -->
-## Inventory
+## Inventory 
 Name | Type | Description
 ---- | ---- | -----------
 `Inventory_Manager` | Manager | Manages Inventories
