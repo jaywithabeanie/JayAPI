@@ -1,6 +1,6 @@
-package me.jayy.jayapi.Managers.Inventory;
+package net.perforce.jayapi.Managers.Inventory;
 
-import me.jayy.jayapi.Managers.Inventory.Utils.createInventory;
+import net.perforce.jayapi.Managers.Inventory.Utils.createInventory;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
@@ -21,7 +21,7 @@ public class Inventory_Manager {
     /**                 • inventoryContent: HashMap containing all Inventory slots with their corresponding ItemStacks      */
     /** ------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                     */
-    public static Inventory createInventory(int rowCount, String title, HashMap<Integer, ItemStack> inventoryContent) {
+    public Inventory createInventory(int rowCount, String title, HashMap<Integer, ItemStack> inventoryContent) {
         return createInventory.createInventory(rowCount, title, inventoryContent);
     }
     /**                                                                                                                     */

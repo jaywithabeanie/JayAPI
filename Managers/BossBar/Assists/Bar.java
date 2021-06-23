@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.BossBar.Assists;
+package net.perforce.jayapi.Managers.BossBar.Assists;
 
 import net.minecraft.server.v1_8_R3.*;
 import org.bukkit.Location;

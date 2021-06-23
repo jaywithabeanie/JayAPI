@@ -1,6 +1,6 @@
-package me.jayy.jayapi.Managers.World;
+package net.perforce.jayapi.Managers.World;
 
-import me.jayy.jayapi.Managers.World.Utils.*;
+import net.perforce.jayapi.Managers.World.Utils.*;
 import org.bukkit.Difficulty;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -19,7 +19,7 @@ public class World_Manager {
     /** @ParameterInfo  • worldName: Name of the World to load                         */
     /** ------------------------------------------------------------------------------ */
     /**                                                                                */
-    public static void loadWorld(String worldName) {
+    public void loadWorld(String worldName) {
         loadWorld.loadWorld(worldName);
     }
     /**                                                                                */
@@ -35,11 +35,11 @@ public class World_Manager {
     /**                 • size: Size of the Border                                     */
     /** ------------------------------------------------------------------------------ */
     /**                                                                                */
-    public static void setBorder(World world, Location center, Double size) {
+    public void setBorder(World world, Location center, Double size) {
         setBorder.setBorder(world, center, size);
     }
     /**                                                                                */
-    public static void setBorder(String worldName, Location center, Double size) {
+    public void setBorder(String worldName, Location center, Double size) {
         setBorder.setBorder(worldName, center, size);
     }
     /**                                                                                */
@@ -54,11 +54,11 @@ public class World_Manager {
     /**                 • difficulty: Difficulty to set the World to                */
     /** --------------------------------------------------------------------------- */
     /**                                                                             */
-    public static void setDifficulty(World world, Difficulty difficulty) {
+    public void setDifficulty(World world, Difficulty difficulty) {
         setDifficulty.setDifficulty(world, difficulty);
     }
     /**                                                                             */
-    public static void setDifficulty(String worldName, Difficulty difficulty) {
+    public void setDifficulty(String worldName, Difficulty difficulty) {
         setDifficulty.setDifficulty(worldName, difficulty);
     }
     /**                                                                             */
@@ -74,11 +74,11 @@ public class World_Manager {
     /**                 • value: Value to change the Game Rule to                         */
     /** --------------------------------------------------------------------------------- */
     /**                                                                                   */
-    public static void setGameRule(World world, String gameRule, String value) {
+    public void setGameRule(World world, String gameRule, String value) {
         setGameRule.setGameRule(world, gameRule, value);
     }
     /**                                                                                   */
-    public static void setGameRule(String worldName, String gameRule, String value) {
+    public void setGameRule(String worldName, String gameRule, String value) {
         setGameRule.setGameRule(worldName, gameRule, value);
     }
     /**                                                                                   */
@@ -93,11 +93,11 @@ public class World_Manager {
     /**                 • x, y, z: X, Y and Z values for the Spawn Location                                          */
     /** ------------------------------------------------------------------------------------------------------------ */
     /**                                                                                                              */
-    public static void setSpawn(World world, Integer x, Integer y, Integer z) {
+    public void setSpawn(World world, Integer x, Integer y, Integer z) {
         setSpawn.setSpawn(world, x, y, z);
     }
     /**                                                                                                              */
-    public static void setSpawn(String worldName, Integer x, Integer y, Integer z) {
+    public void setSpawn(String worldName, Integer x, Integer y, Integer z) {
         setSpawn.setSpawn(worldName, x, y, z);
     }
     /**                                                                                                              */
@@ -112,11 +112,11 @@ public class World_Manager {
     /**                 • time: Time to set the World's Time to                                   */
     /** ----------------------------------------------------------------------------------------- */
     /**                                                                                           */
-    public static void setTime(World world, Long time) {
+    public void setTime(World world, Long time) {
         setTime.setTime(world, time);
     }
     /**                                                                                           */
-    public static void setTime(String worldName, Long time) {
+    public void setTime(String worldName, Long time) {
         setTime.setTime(worldName, time);
     }
     /**                                                                                           */
@@ -132,11 +132,11 @@ public class World_Manager {
     /**                 • storm: Whether it should be Storming                            */
     /** --------------------------------------------------------------------------------- */
     /**                                                                                   */
-    public static void setWeather(World world, Boolean thunder, Boolean storm) {
+    public void setWeather(World world, Boolean thunder, Boolean storm) {
         setWeather.setWeather(world, thunder, storm);
     }
     /**                                                                                   */
-    public static void setWeather(String worldName, Boolean thunder, Boolean storm) {
+    public void setWeather(String worldName, Boolean thunder, Boolean storm) {
         setWeather.setWeather(worldName, thunder, storm);
     }
     /**                                                                                   */
@@ -151,11 +151,11 @@ public class World_Manager {
     /**                 • player: Player to teleport                                                                   */
     /** -------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                */
-    public static void teleportToWorld(World world, Player player) {
+    public void teleportToWorld(World world, Player player) {
         teleportToWorld.teleportToWorld(world, player);
     }
     /**                                                                                                                */
-    public static void teleportToWorld(String worldName, Player player) {
+    public void teleportToWorld(String worldName, Player player) {
         teleportToWorld.teleportToWorld(worldName, player);
     }
     /**                                                                                                                */
@@ -170,11 +170,11 @@ public class World_Manager {
     /**                 • save: Whether or not to save the World                                                 */
     /** -------------------------------------------------------------------------------------------------------- */
     /**                                                                                                          */
-    public static void unloadWorld(World world, Boolean save) {
+    public void unloadWorld(World world, Boolean save) {
         unloadWorld.unloadWorld(world, save);
     }
     /**                                                                                                          */
-    public static void unloadWorld(String worldName, Boolean save) {
+    public void unloadWorld(String worldName, Boolean save) {
         unloadWorld.unloadWorld(worldName, save);
     }
     /**                                                                                                          */

@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Config.Utils;
+package net.perforce.jayapi.Managers.Config.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;

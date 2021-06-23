@@ -1,19 +1,19 @@
-package me.jayy.jayapi.Managers.NPC.Utils;
+package net.perforce.jayapi.Managers.NPC.Utils;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
-import me.jayy.jayapi.JayAPI;
-import me.jayy.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import net.minecraft.server.v1_8_R3.MinecraftServer;
 import net.minecraft.server.v1_8_R3.PlayerInteractManager;
 import net.minecraft.server.v1_8_R3.WorldServer;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.NPC.NPC_Manager;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.World;
+import org.bukkit.craftbukkit.libs.com.google.gson.JsonObject;
+import org.bukkit.craftbukkit.libs.com.google.gson.JsonParser;
 import org.bukkit.craftbukkit.v1_8_R3.CraftServer;
 import org.bukkit.craftbukkit.v1_8_R3.CraftWorld;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
@@ -146,7 +146,7 @@ public class createNPC {
         // Save NPC
         NPC_Manager.NPCs.put(npc, location);
         {
-            Set<EntityPlayer> npcList = NPC_Manager.getNPCs(linkedPlayer);
+            Set<EntityPlayer> npcList = JayAPI.npc_manager.getNPCs(linkedPlayer);
             if (npcList == null) npcList = Collections.emptySet();
 
             npcList.add(npc);

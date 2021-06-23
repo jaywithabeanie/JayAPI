@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Message.Enums;
+package net.perforce.jayapi.Managers.Message.Enums;
 
 
 /** @ClassType Enum Class */

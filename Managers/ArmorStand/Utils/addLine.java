@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.ArmorStand.Utils;
+package net.perforce.jayapi.Managers.ArmorStand.Utils;
 
-import me.jaypeg.jayapi.Managers.ArmorStand.ArmorStand_Manager;
+import net.perforce.jayapi.Managers.ArmorStand.ArmorStand_Manager;
 import net.minecraft.server.v1_8_R3.EntityArmorStand;
 import net.minecraft.server.v1_8_R3.PacketPlayOutSpawnEntityLiving;
 import net.minecraft.server.v1_8_R3.WorldServer;

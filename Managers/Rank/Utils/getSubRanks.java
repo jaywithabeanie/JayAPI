@@ -1,6 +1,7 @@
-package me.jayy.jayapi.Managers.Rank.Utils;
+package net.perforce.jayapi.Managers.Rank.Utils;
 
-import me.jayy.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Config.Config_Manager;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.util.List;
@@ -20,7 +21,7 @@ public class getSubRanks {
     /**                                                         */
     public static List<String> getSubRanks(String rank) {
 
-        YamlConfiguration configuration = Config_Manager.getConfig(".JayAPI.Ranks", rank);
+        YamlConfiguration configuration = JayAPI.config_manager.getConfig(".JayAPI.Ranks", rank);
         return configuration.getStringList(rank + ".SubRanks");
 
     }

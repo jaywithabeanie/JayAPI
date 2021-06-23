@@ -1,8 +1,8 @@
-package me.jayy.jayapi.Managers.Tablist;
+package net.perforce.jayapi.Managers.Tablist;
 
-import me.jayy.jayapi.Managers.Tablist.Utils.setTeam;
-import me.jayy.jayapi.Managers.Tablist.Utils.updateTabList;
-import me.jayy.jayapi.Managers.Tablist.Utils.updateTeam;
+import net.perforce.jayapi.Managers.Tablist.Utils.setTeam;
+import net.perforce.jayapi.Managers.Tablist.Utils.updateTabList;
+import net.perforce.jayapi.Managers.Tablist.Utils.updateTeam;
 import org.bukkit.entity.Player;
 
 
@@ -15,14 +15,14 @@ public class TabList_Manager {
     /** ----------------------------------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                                           */
     /** @UtilInfo       Updates the Tab List for a Player                                                                                   */
-    /** @ParameterInfo  • player: Player to setScoreboard the Tab List for                                                                         */
+    /** @ParameterInfo  • player: Player to update the Tab List for                                                                         */
     /**                 • headerString: Text for the Header                                                                                 */
     /**                 • headerColor: Color for the Header                                                                                 */
     /**                 • footerString: Text for the Footer                                                                                 */
     /**                 • footerColor: Color for the Footer                                                                                 */
     /** ----------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                     */
-    public static void updateTabList(Player player, String headerString, String headerColor, String footerString, String footerColor) {
+    public void updateTabList(Player player, String headerString, String headerColor, String footerString, String footerColor) {
         updateTabList.updateTabList(player, headerString, headerColor, footerString, footerColor);
     }
     /**                                                                                                                                     */
@@ -36,7 +36,7 @@ public class TabList_Manager {
     /**                 • teamName: Name of the Team of the Player                                    */
     /** --------------------------------------------------------------------------------------------- */
     /**                                                                                               */
-    public static void setTeam(Player player, String teamName) {
+    public void setTeam(Player player, String teamName) {
         setTeam.setTeam(player, teamName);
     }
     /**                                                                                               */
@@ -51,7 +51,7 @@ public class TabList_Manager {
     /**                 • suffix: Suffix of the Team (set to "/" to only change the Prefix) */
     /** ----------------------------------------------------------------------------------- */
     /**                                                                                     */
-    public static void updateTeam(String teamName, String prefix, String suffix) {
+    public void updateTeam(String teamName, String prefix, String suffix) {
         updateTeam.updateTeam(teamName, prefix, suffix);
     }
     /**                                                                                     */

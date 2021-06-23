@@ -1,7 +1,7 @@
-package me.jayy.jayapi.Managers.NPC.Utils;
+package net.perforce.jayapi.Managers.NPC.Utils;
 
-import me.jayy.jayapi.JayAPI;
-import me.jayy.jayapi.Managers.NPC.NPC_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.*;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
@@ -23,9 +23,9 @@ public class showNPCs {
     public static void showNPCs(Player player) {
 
         // Show NPCs
-        for (EntityPlayer npc : NPC_Manager.getNPCs()) {
+        for (EntityPlayer npc : JayAPI.npc_manager.getNPCs()) {
 
-            if (NPC_Manager.getLocation(npc).getWorld() != player.getWorld()) continue;
+            if (JayAPI.npc_manager.getLocation(npc).getWorld() != player.getWorld()) continue;
 
             PlayerConnection connection = ((CraftPlayer) player).getHandle().playerConnection;
             connection.sendPacket(new PacketPlayOutPlayerInfo(PacketPlayOutPlayerInfo.EnumPlayerInfoAction.ADD_PLAYER, npc));
@@ -47,7 +47,7 @@ public class showNPCs {
         }
 
         // Show Linked NPCs
-        for (EntityPlayer npc : NPC_Manager.getNPCs(player)) {
+        for (EntityPlayer npc : JayAPI.npc_manager.getNPCs(player)) {
 
             if (npc.getWorld().getWorld() != player.getWorld()) continue;
 

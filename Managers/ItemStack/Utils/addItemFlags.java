@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.ItemStack.Utils;
+package net.perforce.jayapi.Managers.ItemStack.Utils;
 
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;

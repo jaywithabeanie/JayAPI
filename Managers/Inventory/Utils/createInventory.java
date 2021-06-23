@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Inventory.Utils;
+package net.perforce.jayapi.Managers.Inventory.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;

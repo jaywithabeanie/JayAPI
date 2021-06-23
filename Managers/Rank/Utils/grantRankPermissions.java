@@ -1,6 +1,8 @@
-package me.jayy.jayapi.Managers.Rank.Utils;
+package net.perforce.jayapi.Managers.Rank.Utils;
 
-import me.jayy.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.Managers.Config.Utils.saveConfig;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.util.ArrayList;
@@ -23,7 +25,7 @@ public class grantRankPermissions {
     public static void grantRankPermission(String rank, String permission) {
 
         // Get Rank Permissions
-        YamlConfiguration configuration = Config_Manager.getConfig(".JayAPI.Ranks", rank);
+        YamlConfiguration configuration = JayAPI.config_manager.getConfig(".JayAPI.Ranks", rank);
         List<String> currentPermissions = configuration.getStringList(rank + ".Permissions");
         if (currentPermissions == null) currentPermissions = new ArrayList<>();
 
@@ -32,14 +34,14 @@ public class grantRankPermissions {
         configuration.set(rank + ".Permissions", currentPermissions);
 
         // Save Permissions
-        Config_Manager.saveConfig(".JayAPI.Ranks", rank, configuration);
+        JayAPI.config_manager.saveConfig(".JayAPI.Ranks", rank, configuration);
 
     }
     /**                                                                                  */
     public static void grantRankPermissions(String rank, List<String> permissions) {
 
         // Get Rank Permissions
-        YamlConfiguration configuration = Config_Manager.getConfig(".JayAPI.Ranks", rank);
+        YamlConfiguration configuration = JayAPI.config_manager.getConfig(".JayAPI.Ranks", rank);
         List<String> currentPermissions = configuration.getStringList(rank + ".Permissions");
         if (currentPermissions == null) currentPermissions = new ArrayList<>();
 
@@ -48,7 +50,7 @@ public class grantRankPermissions {
         configuration.set(rank + ".Permissions", currentPermissions);
 
         // Save Permissions
-        Config_Manager.saveConfig(".JayAPI.Ranks", rank, configuration);
+        JayAPI.config_manager.saveConfig(".JayAPI.Ranks", rank, configuration);
 
     }
     /**                                                                                  */

@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Title.Utils;
+package net.perforce.jayapi.Managers.Title.Utils;
 
 import net.minecraft.server.v1_8_R1.ChatSerializer;
 import net.minecraft.server.v1_8_R3.IChatBaseComponent;
@@ -16,9 +16,9 @@ public class sendTitle {
     /** ------------------------------------------------------------------------------------------------------------------------------------------ */
     /** @UtilType       Void Util                                                                                                                  */
     /** @UtilInfo       Displays a Title to a Player                                                                                               */
-    /** @ParameterInfo  • player: Player to sendBossBar the Title to                                                                                      */
-    /**                 • title: Title to sendBossBar to the Player                                                                                       */
-    /**                 • subTitle: Subtitle to sendBossBar to the Player                                                                                 */
+    /** @ParameterInfo  • player: Player to send the Title to                                                                                      */
+    /**                 • title: Title to send to the Player                                                                                       */
+    /**                 • subTitle: Subtitle to send to the Player                                                                                 */
     /**                 • displayTime: Time to Display the Title for (seconds)                                                                     */
     /**                 • fadeInTime: Time the fade-in of the Title lasts for (seconds)                                                            */
     /**                 • fadeOutTime: Time the fade-out of the Title lasts for (seconds)                                                          */
@@ -29,7 +29,7 @@ public class sendTitle {
         // Create Packet
         PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), 0, displayTime * 20, 0);
 
-        // sendBossBar Packet
+        // Send Packet
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
 
     }
@@ -39,7 +39,7 @@ public class sendTitle {
         // Create Packet
         PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), fadeInTime * 20, displayTime * 20, fadeOutTime * 20);
 
-        // sendBossBar Packet
+        // Send Packet
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
 
     }
@@ -50,7 +50,7 @@ public class sendTitle {
         PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), 0, displayTime * 20, 0);
         PacketPlayOutTitle subTitlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.SUBTITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + subTitle + "\"}"), 0, displayTime * 20, 0);
 
-        // sendBossBar Packets
+        // Send Packets
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(subTitlePacket);
 
@@ -62,7 +62,7 @@ public class sendTitle {
         PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + title + "\"}"), fadeInTime * 20, displayTime * 20, fadeOutTime * 20);
         PacketPlayOutTitle subTitlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.SUBTITLE, (IChatBaseComponent) ChatSerializer.a("{\"text\":\"" + subTitle + "\"}"), fadeInTime * 20, displayTime * 20, fadeOutTime * 20);
 
-        // sendBossBar Packets
+        // Send Packets
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(titlePacket);
         ((CraftPlayer) player).getHandle().playerConnection.sendPacket(subTitlePacket);
 

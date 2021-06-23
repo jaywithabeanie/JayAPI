@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Scoreboard.Utils;
+package net.perforce.jayapi.Managers.Scoreboard.Utils;
 
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.DisplaySlot;

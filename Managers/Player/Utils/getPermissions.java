@@ -1,7 +1,8 @@
-package me.jayy.jayapi.Managers.Player.Utils;
+package net.perforce.jayapi.Managers.Player.Utils;
 
-import me.jayy.jayapi.Managers.Player.Player_Manager;
-import me.jayy.jayapi.Managers.Rank.Rank_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Player.Player_Manager;
+import net.perforce.jayapi.Managers.Rank.Rank_Manager;
 import org.bukkit.entity.Player;
 
 import java.util.List;
@@ -22,14 +23,14 @@ public class getPermissions {
     /**                                                               */
     public static List<String> getPermissions(String UUID) {
 
-        return Rank_Manager.getRankPermissions(Player_Manager.getRank(UUID));
+        return JayAPI.rank_manager.getRankPermissions(JayAPI.player_manager.getRank(UUID));
 
     }
     /**                                                               */
     public static List<String> getPermissions(Player player) {
 
         String UUID = player.getUniqueId().toString();
-        return Rank_Manager.getRankPermissions(Player_Manager.getRank(UUID));
+        return JayAPI.rank_manager.getRankPermissions(JayAPI.player_manager.getRank(UUID));
 
     }
     /**                                                               */

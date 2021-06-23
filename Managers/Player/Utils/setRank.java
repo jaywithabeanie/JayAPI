@@ -1,6 +1,8 @@
-package me.jayy.jayapi.Managers.Player.Utils;
+package net.perforce.jayapi.Managers.Player.Utils;
 
-import me.jayy.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Config.Utils.getConfig;
+import net.perforce.jayapi.Managers.Config.Utils.saveConfig;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
@@ -21,9 +23,9 @@ public class setRank {
     /**                                                          */
     public static void setRank(String UUID, String rank) {
 
-        YamlConfiguration configuration = Config_Manager.getConfig(".JayAPI.Players", UUID);
+        YamlConfiguration configuration = JayAPI.config_manager.getConfig(".JayAPI.Players", UUID);
         configuration.set(UUID + ".Rank", rank);
-        Config_Manager.saveConfig(".JayAPI.Players", UUID, configuration);
+        JayAPI.config_manager.saveConfig(".JayAPI.Players", UUID, configuration);
 
     }
     /**                                                          */
@@ -31,9 +33,9 @@ public class setRank {
 
         String UUID = player.getUniqueId().toString();
 
-        YamlConfiguration configuration = Config_Manager.getConfig(".JayAPI.Players", UUID);
+        YamlConfiguration configuration = JayAPI.config_manager.getConfig(".JayAPI.Players", UUID);
         configuration.set(UUID + ".Rank", rank);
-        Config_Manager.saveConfig(".JayAPI.Players", UUID, configuration);
+        JayAPI.config_manager.saveConfig(".JayAPI.Players", UUID, configuration);
 
     }
     /**                                                          */

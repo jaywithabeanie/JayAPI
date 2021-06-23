@@ -1,7 +1,7 @@
-package me.jayy.jayapi.Managers.NPC;
+package net.perforce.jayapi.Managers.NPC;
 
-import me.jayy.jayapi.Managers.NPC.Utils.*;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
+import net.perforce.jayapi.Managers.NPC.Utils.*;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
@@ -46,11 +46,11 @@ public class NPC_Manager {
     /**                 • linkedPlayer: Player who the NPC is linked to                                               */
     /** ------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                               */
-    public static void createNPC(Location location, OfflinePlayer skinPlayer, String name) {
+    public void createNPC(Location location, OfflinePlayer skinPlayer, String name) {
         createNPC.createNPC(location, skinPlayer, name);
     }
     /**                                                                                                               */
-    public static void createNPC(Location location, OfflinePlayer skinPlayer, String name, Player linkedPlayer) {
+    public void createNPC(Location location, OfflinePlayer skinPlayer, String name, Player linkedPlayer) {
         createNPC.createNPC(location, skinPlayer, name, linkedPlayer);
     }
     /**                                                                                                               */
@@ -63,7 +63,7 @@ public class NPC_Manager {
     /** @ParameterInfo  • npc: EntityPlayer to get the location of                                */
     /** ----------------------------------------------------------------------------------------- */
     /**                                                                                           */
-    public static Location getLocation(EntityPlayer npc) {
+    public Location getLocation(EntityPlayer npc) {
         return getLocation.getLocation(npc);
     }
     /**                                                                                           */
@@ -76,11 +76,12 @@ public class NPC_Manager {
     /** @ParameterInfo  • player: Player to get the linked NPCs of                              */
     /** --------------------------------------------------------------------------------------- */
     /**                                                                                         */
-    public static Set<EntityPlayer> getNPCs() {
+    public Set<EntityPlayer> getNPCs() {
         return getNPCs.getNPCs();
     }
-    /**                                                                                         */
-    public static Set<EntityPlayer> getNPCs(Player player) {
+    /**
+     * @return                                                                                         */
+    public Set<net.minecraft.server.v1_8_R3.EntityPlayer> getNPCs(Player player) {
         return getNPCs.getNPCs(player);
     }
     /**                                                                                         */
@@ -93,7 +94,7 @@ public class NPC_Manager {
     /** @ParameterInfo  • player: Player to hide the NPCs from                */
     /** --------------------------------------------------------------------- */
     /**                                                                       */
-    public static void hideNPCs(Player player) {
+    public void hideNPCs(Player player) {
         hideNPCs.hideNPCs(player);
     }
     /**                                                                       */
@@ -103,15 +104,15 @@ public class NPC_Manager {
     /** ---------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                  */
     /** @UtilInfo       Removes one or more linked NPCs for a Player                                               */
-    /** @ParameterInfo  • player: Player to removeScoreboard the NPC(s) for                                                  */
-    /**                 • npc(s): NPC(s) to removeScoreboard                                                                 */
+    /** @ParameterInfo  • player: Player to remove the NPC(s) for                                                  */
+    /**                 • npc(s): NPC(s) to remove                                                                 */
     /** ---------------------------------------------------------------------------------------------------------- */
     /**                                                                                                            */
-    public static void removeNPC(Player player, EntityPlayer npc) {
+    public void removeNPC(Player player, EntityPlayer npc) {
         removeNPCs.removeNPC(player, npc);
     }
     /**                                                                                                            */
-    public static void removeNPCs(Player player, List<EntityPlayer> npcs) {
+    public void removeNPCs(Player player, List<EntityPlayer> npcs) {
         removeNPCs.removeNPCs(player, npcs);
     }
     /**                                                                                                            */

@@ -1,8 +1,8 @@
-package me.jayy.jayapi.Managers.Config;
+package net.perforce.jayapi.Managers.Config;
 
-import me.jayy.jayapi.Managers.Config.Utils.createConfig;
-import me.jayy.jayapi.Managers.Config.Utils.getConfig;
-import me.jayy.jayapi.Managers.Config.Utils.saveConfig;
+import net.perforce.jayapi.Managers.Config.Utils.createConfig;
+import net.perforce.jayapi.Managers.Config.Utils.getConfig;
+import net.perforce.jayapi.Managers.Config.Utils.saveConfig;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 
@@ -19,7 +19,7 @@ public class Config_Manager {
     /**                 • fileName: Name the config File will be given                                                                                 */
     /** ---------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                                */
-    public static void createConfig(String directoryPath, String fileName) {
+    public void createConfig(String directoryPath, String fileName) {
         createConfig.createConfig(directoryPath, fileName);
     }
     /**                                                                                                                                                */
@@ -33,7 +33,7 @@ public class Config_Manager {
     /**                 • fileName: Name of the config File                                                                                       */
     /** ----------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                           */
-    public static YamlConfiguration getConfig(String directoryPath, String fileName) {
+    public YamlConfiguration getConfig(String directoryPath, String fileName) {
         return getConfig.getConfig(directoryPath, fileName);
     }
     /**                                                                                                                                           */
@@ -48,7 +48,7 @@ public class Config_Manager {
     /**                 • configFile: YamlConfiguration File to save                                                                                 */
     /** -------------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                              */
-    public static void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
+    public void saveConfig(String directoryPath, String fileName, YamlConfiguration configFile) {
         saveConfig.saveConfig(directoryPath, fileName, configFile);
     }
     /**                                                                                                                                              */

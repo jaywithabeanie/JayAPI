@@ -1,6 +1,8 @@
-package me.jayy.jayapi.Managers.Rank.Utils;
+package net.perforce.jayapi.Managers.Rank.Utils;
 
-import me.jayy.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.Managers.Config.Utils.saveConfig;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 
@@ -19,9 +21,9 @@ public class setPrefix {
     /**                                                            */
     public static void setPrefix(String rank, String prefix) {
 
-        YamlConfiguration configuration = Config_Manager.getConfig(".JayAPI.Ranks", rank);
+        YamlConfiguration configuration = JayAPI.config_manager.getConfig(".JayAPI.Ranks", rank);
         configuration.set(rank + ".Prefix", prefix);
-        Config_Manager.saveConfig(".JayAPI.Ranks", rank, configuration);
+        JayAPI.config_manager.saveConfig(".JayAPI.Ranks", rank, configuration);
 
     }
     /**                                                            */

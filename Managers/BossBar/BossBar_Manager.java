@@ -1,8 +1,8 @@
-package me.jayy.jayapi.Managers.BossBar;
+package net.perforce.jayapi.Managers.BossBar;
 
-import me.jayy.jayapi.Managers.BossBar.Assists.Bar;
-import me.jayy.jayapi.Managers.BossBar.Utils.removeBossBar;
-import me.jayy.jayapi.Managers.BossBar.Utils.sendBossBar;
+import net.perforce.jayapi.Managers.BossBar.Assists.Bar;
+import net.perforce.jayapi.Managers.BossBar.Utils.removeBossBar;
+import net.perforce.jayapi.Managers.BossBar.Utils.sendBossBar;
 import org.bukkit.entity.Player;
 
 import java.util.HashMap;

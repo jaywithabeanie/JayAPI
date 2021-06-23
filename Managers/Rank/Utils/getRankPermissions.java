@@ -1,7 +1,8 @@
-package me.jayy.jayapi.Managers.Rank.Utils;
+package net.perforce.jayapi.Managers.Rank.Utils;
 
-import me.jayy.jayapi.Managers.Config.Config_Manager;
-import me.jayy.jayapi.Managers.Rank.Rank_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.Managers.Rank.Rank_Manager;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.util.ArrayList;
@@ -23,13 +24,13 @@ public class getRankPermissions {
     public static List<String> getRankPermissions(String rank) {
 
         // Get Rank Permissions
-        YamlConfiguration configuration = Config_Manager.getConfig(".JayAPI.Ranks", rank);
+        YamlConfiguration configuration = JayAPI.config_manager.getConfig(".JayAPI.Ranks", rank);
         List<String> currentPermissions = configuration.getStringList(rank + ".Permissions");
         if (currentPermissions == null) currentPermissions = new ArrayList<>();
 
         // Get SubRank Permissions
-        for (String subRank : Rank_Manager.getSubRanks(rank)) {
-            for (String permission : Rank_Manager.getRankPermissions(subRank)) {
+        for (String subRank : JayAPI.rank_manager.getSubRanks(rank)) {
+            for (String permission : JayAPI.rank_manager.getRankPermissions(subRank)) {
                 if (!currentPermissions.contains(permission))
                     currentPermissions.add(permission);
             }

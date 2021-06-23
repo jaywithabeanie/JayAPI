@@ -1,13 +1,13 @@
-package me.jaypeg.jayapi.Managers.ArmorStand;
+package net.perforce.jayapi.Managers.ArmorStand;
 
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.createArmorStand;
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.getArmorStands;
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.removeArmorStand;
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.addLine;
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.editLine;
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.getLocation;
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.removeLine;
-import me.jaypeg.jayapi.Managers.ArmorStand.Utils.setLocation;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.createArmorStand;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.getArmorStands;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.removeArmorStand;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.addLine;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.editLine;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.getLocation;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.removeLine;
+import net.perforce.jayapi.Managers.ArmorStand.Utils.setLocation;
 import net.minecraft.server.v1_8_R3.EntityArmorStand;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

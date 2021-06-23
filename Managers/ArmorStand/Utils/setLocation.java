@@ -1,6 +1,6 @@
-package me.jaypeg.jayapi.Managers.ArmorStand.Utils;
+package net.perforce.jayapi.Managers.ArmorStand.Utils;
 
-import me.jaypeg.jayapi.Managers.ArmorStand.ArmorStand_Manager;
+import net.perforce.jayapi.Managers.ArmorStand.ArmorStand_Manager;
 import org.bukkit.Location;
 
 public class setLocation {

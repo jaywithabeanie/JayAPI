@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.NPC.Events.RightClickNPCEvent;
+package net.perforce.jayapi.Managers.NPC.Events.RightClickNPCEvent;
 
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import org.bukkit.entity.Player;

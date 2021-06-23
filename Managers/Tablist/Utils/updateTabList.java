@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Tablist.Utils;
+package net.perforce.jayapi.Managers.Tablist.Utils;
 
 import net.minecraft.server.v1_8_R3.IChatBaseComponent;
 import net.minecraft.server.v1_8_R3.PacketPlayOutPlayerListHeaderFooter;
@@ -18,7 +18,7 @@ public class updateTabList {
     /** ----------------------------------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                                           */
     /** @UtilInfo       Updates the Tab List for a Player                                                                                   */
-    /** @ParameterInfo  • player: Player to setScoreboard the Tab List for                                                                         */
+    /** @ParameterInfo  • player: Player to update the Tab List for                                                                         */
     /**                 • headerString: Text for the Header                                                                                 */
     /**                 • headerColor: Color for the Header                                                                                 */
     /**                 • footerString: Text for the Footer                                                                                 */
@@ -51,7 +51,7 @@ public class updateTabList {
             }
         }
 
-        // sendBossBar Packet
+        // Send Packet
         PlayerConnection connection = ((CraftPlayer) player).getHandle().playerConnection;
         connection.sendPacket(packet);
 
