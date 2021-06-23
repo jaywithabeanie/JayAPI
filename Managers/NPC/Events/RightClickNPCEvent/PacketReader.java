@@ -1,10 +1,9 @@
-package me.jayy.jayapi.Managers.NPC.Events.RightClickNPCEvent;
+package net.perforce.jayapi.Managers.NPC.Events.RightClickNPCEvent;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
-import me.jayy.jayapi.JayAPI;
-import me.jayy.jayapi.Managers.NPC.NPC_Manager;
+import net.perforce.jayapi.JayAPI;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import net.minecraft.server.v1_8_R3.Packet;
 import org.bukkit.Bukkit;
@@ -69,7 +68,16 @@ public class PacketReader {
             int id = (int) getValue(packet, "a");
 
             if (getValue(packet, "action").toString().equalsIgnoreCase("INTERACT")) {
-                for (EntityPlayer npc : NPC_Manager.getNPCs()) {
+                for (EntityPlayer npc : JayAPI.npc_manager.getNPCs()) {
+                    if (npc.getId() == id) {
+                        new BukkitRunnable() {
+                            public void run() {
+                                Bukkit.getPluginManager().callEvent(new RightClickNPCEvent(player, npc));
+                            }
+                        }.runTaskLater(plugin, 0);
+                    }
+                }
+                for (EntityPlayer npc : JayAPI.npc_manager.getNPCs(player)) {
                     if (npc.getId() == id) {
                         new BukkitRunnable() {
                             public void run() {

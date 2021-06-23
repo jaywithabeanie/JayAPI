@@ -1,7 +1,7 @@
-package me.jayy.jayapi.Managers.BossBar.Utils;
+package net.perforce.jayapi.Managers.BossBar.Utils;
 
-import me.jayy.jayapi.Managers.BossBar.Assists.Bar;
-import me.jayy.jayapi.Managers.BossBar.BossBar_Manager;
+import net.perforce.jayapi.Managers.BossBar.Assists.Bar;
+import net.perforce.jayapi.Managers.BossBar.BossBar_Manager;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 

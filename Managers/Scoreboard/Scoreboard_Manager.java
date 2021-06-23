@@ -1,11 +1,11 @@
-package me.jayy.jayapi.Managers.Scoreboard;
+package net.perforce.jayapi.Managers.Scoreboard;
 
-import me.jayy.jayapi.Managers.Scoreboard.Utils.addLine;
-import me.jayy.jayapi.Managers.Scoreboard.Utils.removeLine;
-import me.jayy.jayapi.Managers.Scoreboard.Utils.setTitle;
-import me.jayy.jayapi.Managers.Scoreboard.Utils.createScoreboard;
-import me.jayy.jayapi.Managers.Scoreboard.Utils.removeScoreboard;
-import me.jayy.jayapi.Managers.Scoreboard.Utils.setScoreboard;
+import net.perforce.jayapi.Managers.Scoreboard.Utils.addLine;
+import net.perforce.jayapi.Managers.Scoreboard.Utils.removeLine;
+import net.perforce.jayapi.Managers.Scoreboard.Utils.setTitle;
+import net.perforce.jayapi.Managers.Scoreboard.Utils.createScoreboard;
+import net.perforce.jayapi.Managers.Scoreboard.Utils.removeScoreboard;
+import net.perforce.jayapi.Managers.Scoreboard.Utils.setScoreboard;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 
@@ -25,7 +25,7 @@ public class Scoreboard_Manager {
     /**                 • lines: Line to add to the Scoreboard                                                  */
     /** ------------------------------------------------------------------------------------------------------- */
     /**                                                                                                         */
-    public static void addLine(Player player, String line, int value) {
+    public void addLine(Player player, String line, int value) {
         addLine.addLine(player, line, value);
     }
     /**                                                                                                         */
@@ -39,7 +39,7 @@ public class Scoreboard_Manager {
     /**                 • scoreInfo: HashMap containing the Scores' text with their corresponding placement Integer */
     /** ----------------------------------------------------------------------------------------------------------- */
     /**                                                                                                             */
-    public static Scoreboard createScoreboard(String title, HashMap<Integer, String> scoreInfo) {
+    public Scoreboard createScoreboard(String title, HashMap<Integer, String> scoreInfo) {
         return createScoreboard.createScoreboard(title, scoreInfo);
     }
     /**                                                                                                             */
@@ -53,7 +53,7 @@ public class Scoreboard_Manager {
     /**                 • lines: Line to remove from the Scoreboard                                    */
     /** ---------------------------------------------------------------------------------------------- */
     /**                                                                                                */
-    public static void removeLine(Player player, String line) {
+    public void removeLine(Player player, String line) {
         removeLine.removeLine(player, line);
     }
     /**                                                                                                */
@@ -66,7 +66,7 @@ public class Scoreboard_Manager {
     /** @ParameterInfo  • player: Player to remove the Scoreboard from                                */
     /** --------------------------------------------------------------------------------------------- */
     /**                                                                                               */
-    public static void removeScoreboard(Player player) {
+    public void removeScoreboard(Player player) {
         removeScoreboard.removeScoreboard(player);
     }
     /**                                                                                               */
@@ -80,7 +80,7 @@ public class Scoreboard_Manager {
     /**                 • scoreboard: Scoreboard the Player will receive         */
     /** ------------------------------------------------------------------------ */
     /**                                                                          */
-    public static void setScoreboard(Player player, Scoreboard scoreboard) {
+    public void setScoreboard(Player player, Scoreboard scoreboard) {
         setScoreboard.setScoreboard(player, scoreboard);
     }
     /**                                                                          */
@@ -94,7 +94,7 @@ public class Scoreboard_Manager {
     /**                 • title: Title of the Scoreboard                                           */
     /** ------------------------------------------------------------------------------------------ */
     /**                                                                                            */
-    public static void setTitle(Player player, String title) {
+    public void setTitle(Player player, String title) {
         setTitle.setTitle(player, title);
     }
     /**                                                                                            */

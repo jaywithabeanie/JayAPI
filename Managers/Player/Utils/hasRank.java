@@ -1,6 +1,7 @@
-package me.jayy.jayapi.Managers.Player.Utils;
+package net.perforce.jayapi.Managers.Player.Utils;
 
-import me.jayy.jayapi.Managers.Player.Player_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Player.Player_Manager;
 import org.bukkit.entity.Player;
 
 
@@ -20,13 +21,13 @@ public class hasRank {
     /**                                                             */
     public static boolean hasRank(String UUID, String rank) {
 
-        return Player_Manager.getRank(UUID).equals(rank);
+        return JayAPI.player_manager.getRank(UUID).equals(rank);
 
     }
     /**                                                             */
     public static boolean hasRank(Player player, String rank) {
 
-        return Player_Manager.getRank(player).equals(rank);
+        return JayAPI.player_manager.getRank(player).equals(rank);
 
     }
     /**                                                             */

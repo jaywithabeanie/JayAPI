@@ -1,7 +1,9 @@
-package me.jayy.jayapi.Managers.Rank.Utils;
+package net.perforce.jayapi.Managers.Rank.Utils;
 
-import me.jayy.jayapi.Managers.Config.Config_Manager;
-import me.jayy.jayapi.Managers.Rank.Rank_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.Managers.Config.Utils.createConfig;
+import net.perforce.jayapi.Managers.Rank.Rank_Manager;
 import org.bukkit.Color;
 
 import java.util.List;
@@ -27,76 +29,76 @@ public class addRank {
     public static void addRank(String rank, Color color, boolean staff, List<String> subRanks, String permission) {
 
         // Create Config
-        Config_Manager.createConfig(".JayAPI.Ranks", rank);
+        JayAPI.config_manager.createConfig(".JayAPI.Ranks", rank);
 
         // Set Prefix
-        Rank_Manager.setPrefix(rank, color + "[" + rank + "] ");
+        JayAPI.rank_manager.setPrefix(rank, color + "[" + rank + "] ");
 
         // Set Staff
-        Rank_Manager.setStaff(rank, staff);
+        JayAPI.rank_manager.setStaff(rank, staff);
 
         // Set SubRanks
-        Rank_Manager.setSubRanks(rank, subRanks);
+        JayAPI.rank_manager.setSubRanks(rank, subRanks);
 
         // Grant Permissions
-        Rank_Manager.grantRankPermission(rank, permission);
+        JayAPI.rank_manager.grantRankPermission(rank, permission);
 
     }
     /**                                                                                                                                       */
     public static void addRank(String rank, Color color, boolean staff, List<String> subRanks, List<String> permissions) {
 
         // Create Config
-        Config_Manager.createConfig(".JayAPI.Ranks", rank);
+        JayAPI.config_manager.createConfig(".JayAPI.Ranks", rank);
 
         // Set Prefix
-        Rank_Manager.setPrefix(rank, color + "[" + rank + "] ");
+        JayAPI.rank_manager.setPrefix(rank, color + "[" + rank + "] ");
 
         // Set Staff
-        Rank_Manager.setStaff(rank, staff);
+        JayAPI.rank_manager.setStaff(rank, staff);
 
         // Set SubRanks
-        Rank_Manager.setSubRanks(rank, subRanks);
+        JayAPI.rank_manager.setSubRanks(rank, subRanks);
 
         // Grant Permissions
-        Rank_Manager.grantRankPermissions(rank, permissions);
+        JayAPI.rank_manager.grantRankPermissions(rank, permissions);
 
     }
     /**                                                                                                                                       */
     public static void addRank(String rank, Color color, String prefix, boolean staff, List<String> subRanks, String permission) {
 
         // Create Config
-        Config_Manager.createConfig(".JayAPI.Ranks", rank);
+        JayAPI.config_manager.createConfig(".JayAPI.Ranks", rank);
 
         // Set Prefix
-        Rank_Manager.setPrefix(rank, color + "[" + prefix + "] ");
+        JayAPI.rank_manager.setPrefix(rank, color + "[" + prefix + "] ");
 
         // Set Staff
-        Rank_Manager.setStaff(rank, staff);
+        JayAPI.rank_manager.setStaff(rank, staff);
 
         // Set SubRanks
-        Rank_Manager.setSubRanks(rank, subRanks);
+        JayAPI.rank_manager.setSubRanks(rank, subRanks);
 
         // Grant Permissions
-        Rank_Manager.grantRankPermission(rank, permission);
+        JayAPI.rank_manager.grantRankPermission(rank, permission);
 
     }
     /**                                                                                                                                       */
     public static void addRank(String rank, Color color, String prefix, boolean staff, List<String> subRanks, List<String> permissions) {
 
         // Create Config
-        Config_Manager.createConfig(".JayAPI.Ranks", rank);
+        JayAPI.config_manager.createConfig(".JayAPI.Ranks", rank);
 
         // Set Prefix
-        Rank_Manager.setPrefix(rank, color + "[" + prefix + "] ");
+        JayAPI.rank_manager.setPrefix(rank, color + "[" + prefix + "] ");
 
         // Set Staff
-        Rank_Manager.setStaff(rank, staff);
+        JayAPI.rank_manager.setStaff(rank, staff);
 
         // Set SubRanks
-        Rank_Manager.setSubRanks(rank, subRanks);
+        JayAPI.rank_manager.setSubRanks(rank, subRanks);
 
         // Grant Permissions
-        Rank_Manager.grantRankPermissions(rank, permissions);
+        JayAPI.rank_manager.grantRankPermissions(rank, permissions);
 
     }
     /**                                                                                                                                       */

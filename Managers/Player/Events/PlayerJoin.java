@@ -1,6 +1,9 @@
-package me.jayy.jayapi.Managers.Player.Events;
+package net.perforce.jayapi.Managers.Player.Events;
 
-import me.jayy.jayapi.Managers.Config.Config_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Config.Utils.createConfig;
+import net.perforce.jayapi.Managers.Config.Utils.getConfig;
+import net.perforce.jayapi.Managers.Config.Utils.saveConfig;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -36,8 +39,8 @@ public class PlayerJoin implements Listener {
 
         // Create & Update Config File
         {
-            Config_Manager.createConfig("JayAPI.Players", UUID);
-            YamlConfiguration configuration = Config_Manager.getConfig("JayAPI.Players", UUID);
+            JayAPI.config_manager.createConfig("JayAPI.Players", UUID);
+            YamlConfiguration configuration = JayAPI.config_manager.getConfig("JayAPI.Players", UUID);
             if (!configuration.getString(UUID + ".Name").equals(playerName)) {
                 configuration.set(UUID + ".Name", playerName);
             }
@@ -48,7 +51,7 @@ public class PlayerJoin implements Listener {
                 configuration.set(UUID + ".FirstDateJoined", date);
             }
             configuration.set(UUID + ".LastDateJoined", date);
-            Config_Manager.saveConfig("JayAPI.Players", UUID, configuration);
+            JayAPI.config_manager.saveConfig("JayAPI.Players", UUID, configuration);
         }
 
     }

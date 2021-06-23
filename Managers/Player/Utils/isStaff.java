@@ -1,7 +1,8 @@
-package me.jayy.jayapi.Managers.Player.Utils;
+package net.perforce.jayapi.Managers.Player.Utils;
 
-import me.jayy.jayapi.Managers.Player.Player_Manager;
-import me.jayy.jayapi.Managers.Rank.Rank_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Player.Player_Manager;
+import net.perforce.jayapi.Managers.Rank.Rank_Manager;
 import org.bukkit.entity.Player;
 
 
@@ -20,14 +21,14 @@ public class isStaff {
     /**                                                                               */
     public static boolean isStaff(String UUID) {
 
-         return Rank_Manager.isStaff(Player_Manager.getRank(UUID));
+         return JayAPI.rank_manager.isStaff(JayAPI.player_manager.getRank(UUID));
 
     }
     /**                                                                               */
     public static boolean isStaff(Player player) {
 
         String UUID = player.getUniqueId().toString();
-        return Rank_Manager.isStaff(Player_Manager.getRank(UUID));
+        return JayAPI.rank_manager.isStaff(JayAPI.player_manager.getRank(UUID));
 
     }
     /** ----------------------------------------------------------------------------- */

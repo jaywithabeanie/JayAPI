@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Scoreboard.Utils;
+package net.perforce.jayapi.Managers.Scoreboard.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.scoreboard.*;

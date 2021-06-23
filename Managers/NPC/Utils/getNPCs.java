@@ -1,6 +1,6 @@
-package me.jayy.jayapi.Managers.NPC.Utils;
+package net.perforce.jayapi.Managers.NPC.Utils;
 
-import me.jayy.jayapi.Managers.NPC.NPC_Manager;
+import net.perforce.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import org.bukkit.entity.Player;
 

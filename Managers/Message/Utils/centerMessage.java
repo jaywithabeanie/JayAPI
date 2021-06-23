@@ -1,6 +1,6 @@
-package me.jayy.jayapi.Managers.Message.Utils;
+package net.perforce.jayapi.Managers.Message.Utils;
 
-import me.jayy.jayapi.Managers.Message.Enums.MessageCenter;
+import net.perforce.jayapi.Managers.Message.Enums.MessageCenter;
 import org.bukkit.ChatColor;
 
 

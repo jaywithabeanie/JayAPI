@@ -1,6 +1,6 @@
-package me.jayy.jayapi.Managers.Rank;
+package net.perforce.jayapi.Managers.Rank;
 
-import me.jayy.jayapi.Managers.Rank.Utils.*;
+import net.perforce.jayapi.Managers.Rank.Utils.*;
 import org.bukkit.Color;
 
 import java.util.List;
@@ -23,19 +23,19 @@ public class Rank_Manager {
     /**                 • permission(s): Permission(s) to grant the Rank                                                                      */
     /** ------------------------------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                                       */
-    public static void addRank(String rank, Color color, boolean staff, List<String> subRanks, String permission) {
+    public void addRank(String rank, Color color, boolean staff, List<String> subRanks, String permission) {
         addRank.addRank(rank, color, staff, subRanks, permission);
     }
     /**                                                                                                                                       */
-    public static void addRank(String rank, Color color, boolean staff, List<String> subRanks, List<String> permissions) {
+    public void addRank(String rank, Color color, boolean staff, List<String> subRanks, List<String> permissions) {
         addRank.addRank(rank, color, staff, subRanks, permissions);
     }
     /**                                                                                                                                       */
-    public static void addRank(String rank, Color color, String prefix, boolean staff, List<String> subRanks, String permission) {
+    public void addRank(String rank, Color color, String prefix, boolean staff, List<String> subRanks, String permission) {
         addRank.addRank(rank, color, prefix, staff, subRanks, permission);
     }
     /**                                                                                                                                       */
-    public static void addRank(String rank, Color color, String prefix, boolean staff, List<String> subRanks, List<String> permissions) {
+    public void addRank(String rank, Color color, String prefix, boolean staff, List<String> subRanks, List<String> permissions) {
         addRank.addRank(rank, color, prefix, staff, subRanks, permissions);
     }
     /**                                                                                                                                       */
@@ -48,7 +48,7 @@ public class Rank_Manager {
     /** @ParameterInfo  • rank: Rank to get the Prefix of                             */
     /** ----------------------------------------------------------------------------- */
     /**                                                                               */
-    public static String getPrefix(String rank) {
+    public String getPrefix(String rank) {
         return getPrefix.getPrefix(rank);
     }
     /**                                                                               */
@@ -61,7 +61,7 @@ public class Rank_Manager {
     /** @ParameterInfo  • rank: Rank to get the Permissions of                                                         */
     /** -------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                */
-    public static List<String> getRankPermissions(String rank) {
+    public List<String> getRankPermissions(String rank) {
         return getRankPermissions.getRankPermissions(rank);
     }
     /**                                                                                                                */
@@ -74,7 +74,7 @@ public class Rank_Manager {
     /** @ParameterInfo  • rank: Rank to get the SubRanks of                                       */
     /** ----------------------------------------------------------------------------------------- */
     /**                                                                                           */
-    public static List<String> getSubRanks(String rank) {
+    public List<String> getSubRanks(String rank) {
         return getSubRanks.getSubRanks(rank);
     }
     /**                                                                                           */
@@ -88,11 +88,11 @@ public class Rank_Manager {
     /**                 • permission(s): Permission(s) to grant                          */
     /** -------------------------------------------------------------------------------- */
     /**                                                                                  */
-    public static void grantRankPermission(String rank, String permission) {
+    public void grantRankPermission(String rank, String permission) {
         grantRankPermissions.grantRankPermission(rank, permission);
     }
     /**                                                                                  */
-    public static void grantRankPermissions(String rank, List<String> permissions) {
+    public void grantRankPermissions(String rank, List<String> permissions) {
         grantRankPermissions.grantRankPermissions(rank, permissions);
     }
     /**                                                                                  */
@@ -106,11 +106,11 @@ public class Rank_Manager {
     /**                 • permission(s): Permission(s) to check                       */
     /** ----------------------------------------------------------------------------- */
     /**                                                                               */
-    public static boolean hasPermission(String rank, String permission) {
+    public boolean hasPermission(String rank, String permission) {
         return hasPermissions.hasPermission(rank, permission);
     }
     /**                                                                               */
-    public static boolean hasPermissions(String rank, List<String> permissions) {
+    public boolean hasPermissions(String rank, List<String> permissions) {
         return hasPermissions.hasPermissions(rank, permissions);
     }
     /**                                                                               */
@@ -123,7 +123,7 @@ public class Rank_Manager {
     /** @ParameterInfo  • rank: Rank to check of whether it's considered Staff   */
     /** ------------------------------------------------------------------------ */
     /**                                                                          */
-    public static boolean isStaff(String rank) {
+    public boolean isStaff(String rank) {
         return isStaff.isStaff(rank);
     }
     /**                                                                          */
@@ -133,10 +133,10 @@ public class Rank_Manager {
     /** ----------------------------------------------------------------------- */
     /** @UtilType       Void Util                                               */
     /** @UtilInfo       Removes a Rank                                          */
-    /** @ParameterInfo  • rank: Rank to removeScoreboard                                  */
+    /** @ParameterInfo  • rank: Rank to remove                                  */
     /** ----------------------------------------------------------------------- */
     /**                                                                         */
-    public static void removeRank(String rank) {
+    public void removeRank(String rank) {
         removeRank.removeRank(rank);
     }
     /**                                                                         */
@@ -146,15 +146,15 @@ public class Rank_Manager {
     /** --------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                         */
     /** @UtilInfo       Removes one or more Permissions from a Rank                       */
-    /** @ParameterInfo  • rank: Rank to removeScoreboard one or more Permissions from               */
-    /**                 • permission(s): Permission(s) to removeScoreboard from the Rank            */
+    /** @ParameterInfo  • rank: Rank to remove one or more Permissions from               */
+    /**                 • permission(s): Permission(s) to remove from the Rank            */
     /** --------------------------------------------------------------------------------- */
     /**                                                                                   */
-    public static void removeRankPermission(String rank, String permission) {
+    public void removeRankPermission(String rank, String permission) {
         removeRankPermissions.removeRankPermission(rank, permission);
     }
     /**                                                                                   */
-    public static void removeRankPermissions(String rank, List<String> permissions) {
+    public void removeRankPermissions(String rank, List<String> permissions) {
         removeRankPermissions.removeRankPermissions(rank, permissions);
     }
     /**                                                                                   */
@@ -168,7 +168,7 @@ public class Rank_Manager {
     /**                 • prefix: Prefix of the Rank                                                */
     /** ------------------------------------------------------------------------------------------- */
     /**                                                                                             */
-    public static void setPrefix(String rank, String prefix) {
+    public void setPrefix(String rank, String prefix) {
         setPrefix.setPrefix(rank, prefix);
     }
     /**                                                                                             */
@@ -178,11 +178,11 @@ public class Rank_Manager {
     /** --------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                               */
     /** @UtilInfo       Changes whether a Rank is considered Staff                              */
-    /** @ParameterInfo  • rank: Rank to set or removeScoreboard from Staff                                */
+    /** @ParameterInfo  • rank: Rank to set or remove from Staff                                */
     /**                 • staff: Whether the Rank is considered Staff                           */
     /** --------------------------------------------------------------------------------------- */
     /**                                                                                         */
-    public static void setStaff(String rank, boolean staff) {
+    public void setStaff(String rank, boolean staff) {
         setStaff.setStaff(rank, staff);
     }
     /**                                                                                         */
@@ -191,12 +191,12 @@ public class Rank_Manager {
 
     /** ----------------------------------------------------------------------------------------------------------- */
     /** @UtilType       Void Util                                                                                   */
-    /** @UtilInfo       Sets the SubRanks of a Rank (inherits Permissions)                                         */
+    /** @UtilInfo       Sets the SubRanks of a Rank (inherits Permissions)                                          */
     /** @ParameterInfo  • rank: Rank to set the Sub-Ranks of                                                        */
     /**                 • subRanks: SubRanks to add to the Rank                                                     */
     /** ----------------------------------------------------------------------------------------------------------- */
     /**                                                                                                             */
-    public static void setSubRanks(String rank, List<String> subRanks) {
+    public void setSubRanks(String rank, List<String> subRanks) {
         setSubRanks.setSubRanks(rank, subRanks);
     }
     /**                                                                                                             */

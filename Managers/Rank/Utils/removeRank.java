@@ -1,4 +1,4 @@
-package me.jayy.jayapi.Managers.Rank.Utils;
+package net.perforce.jayapi.Managers.Rank.Utils;
 
 import org.bukkit.Bukkit;
 

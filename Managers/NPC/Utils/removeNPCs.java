@@ -1,6 +1,7 @@
-package me.jayy.jayapi.Managers.NPC.Utils;
+package net.perforce.jayapi.Managers.NPC.Utils;
 
-import me.jayy.jayapi.Managers.NPC.NPC_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import org.bukkit.entity.Player;
 
@@ -24,7 +25,7 @@ public class removeNPCs {
     public static void removeNPC(Player player, EntityPlayer npc) {
 
         // Get Linked NPCs
-        Set<EntityPlayer> linkedNPCs = NPC_Manager.getNPCs(player);
+        Set<EntityPlayer> linkedNPCs = JayAPI.npc_manager.getNPCs(player);
 
         // removeScoreboard NPC
         linkedNPCs.remove(npc);
@@ -35,7 +36,7 @@ public class removeNPCs {
     public static void removeNPCs(Player player, List<EntityPlayer> npcs) {
 
         // Get Linked NPCs
-        Set<EntityPlayer> linkedNPCs = NPC_Manager.getNPCs(player);
+        Set<EntityPlayer> linkedNPCs = JayAPI.npc_manager.getNPCs(player);
 
         // removeScoreboard NPCs
         npcs.forEach(linkedNPCs :: remove);

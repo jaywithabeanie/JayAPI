@@ -1,6 +1,6 @@
-package me.jayy.jayapi.Managers.Tablist.Utils;
+package net.perforce.jayapi.Managers.Tablist.Utils;
 
-import me.jayy.jayapi.JayAPI;
+import net.perforce.jayapi.JayAPI;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 

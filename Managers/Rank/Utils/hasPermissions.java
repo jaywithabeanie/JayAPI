@@ -1,6 +1,7 @@
-package me.jayy.jayapi.Managers.Rank.Utils;
+package net.perforce.jayapi.Managers.Rank.Utils;
 
-import me.jayy.jayapi.Managers.Rank.Rank_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.Rank.Rank_Manager;
 
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class hasPermissions {
     public static boolean hasPermission(String rank, String permission) {
 
         // Check Rank Permissions
-        return Rank_Manager.getRankPermissions(rank).contains(permission);
+        return JayAPI.rank_manager.getRankPermissions(rank).contains(permission);
 
     }
     /**                                                                               */
@@ -29,7 +30,7 @@ public class hasPermissions {
 
         // Check Each Permission
         for (String permission : permissions) {
-            if (!Rank_Manager.hasPermission(rank, permission))
+            if (!JayAPI.rank_manager.hasPermission(rank, permission))
                 return false;
         }
 

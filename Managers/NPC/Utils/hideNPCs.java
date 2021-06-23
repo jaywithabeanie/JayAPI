@@ -1,6 +1,7 @@
-package me.jayy.jayapi.Managers.NPC.Utils;
+package net.perforce.jayapi.Managers.NPC.Utils;
 
-import me.jayy.jayapi.Managers.NPC.NPC_Manager;
+import net.perforce.jayapi.JayAPI;
+import net.perforce.jayapi.Managers.NPC.NPC_Manager;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
 import net.minecraft.server.v1_8_R3.PacketPlayOutEntityDestroy;
 import net.minecraft.server.v1_8_R3.PacketPlayOutPlayerInfo;
@@ -24,14 +25,14 @@ public class hideNPCs {
     public static void hideNPCs(Player player) {
 
         // Hide NPCs
-        for (EntityPlayer npc : NPC_Manager.getNPCs()) {
+        for (EntityPlayer npc : JayAPI.npc_manager.getNPCs()) {
             PlayerConnection connection = ((CraftPlayer) player).getHandle().playerConnection;
             connection.sendPacket(new PacketPlayOutPlayerInfo(PacketPlayOutPlayerInfo.EnumPlayerInfoAction.REMOVE_PLAYER, npc));
             connection.sendPacket(new PacketPlayOutEntityDestroy(npc.getId()));
         }
 
         // Hide Linked NPCs
-        for (EntityPlayer npc : NPC_Manager.getNPCs(player)) {
+        for (EntityPlayer npc : JayAPI.npc_manager.getNPCs(player)) {
             PlayerConnection connection = ((CraftPlayer) player).getHandle().playerConnection;
             connection.sendPacket(new PacketPlayOutPlayerInfo(PacketPlayOutPlayerInfo.EnumPlayerInfoAction.REMOVE_PLAYER, npc));
             connection.sendPacket(new PacketPlayOutEntityDestroy(npc.getId()));
