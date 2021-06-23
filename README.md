@@ -63,6 +63,7 @@ Name | Type | Description
 ---- | ---- | -----------
 `Message_Manager` | Manager | Manages Messages
 `centerMessage` | Util | Returns a centered Message
+`createClickableMessage` | Util | Returns a Clickable Message which runs a Command or opens a URL
 `sendActionBarMessage` | Util | Sends a Message in the Action Bar
 `sendMessage` | Util | Sends a Message to a World
 `MessageCenter` | Enum | Contains and Manages character data to center Messages
