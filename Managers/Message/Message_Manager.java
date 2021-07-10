@@ -37,11 +37,11 @@ public class Message_Manager {
     /**                 • url: URL to open upon clicking the Message                                                     */
     /** ---------------------------------------------------------------------------------------------------------------- */
     /**                                                                                                                  */
-    public static TextComponent createClickableCommandMessage(String message, String hoverMessage, String command) {
+    public TextComponent createClickableCommandMessage(String message, String hoverMessage, String command) {
         return createClickableMessage.createClickableCommandMessage(message, hoverMessage, command);
     }
     /**                                                                                                                  */
-    public static TextComponent createClickableURLMessage(String message, String hoverMessage, String url) {
+    public TextComponent createClickableURLMessage(String message, String hoverMessage, String url) {
         return createClickableMessage.createClickableURLMessage(message, hoverMessage, url);
     }
     /**                                                                                                                  */
